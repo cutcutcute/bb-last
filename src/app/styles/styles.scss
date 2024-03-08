@@ -5,6 +5,7 @@
 @import "header";
 @import "portfolio";
 @import "info";
+@import "prices";
 @import "logo";
 
 
@@ -18,6 +19,7 @@
     margin: 0;
     font-family: "Century Gothic";
     box-sizing: border-box;
+
 }
 
 .title-images{
@@ -25,6 +27,7 @@
     width: 100%;
     height: 40vh;
     background-color: black ;
+    
 }
 
 
@@ -38,11 +41,17 @@
 
 .carouselWrapper{
     position: relative;
+    border: 1px solid green;
     width: 100%;
+    margin-bottom: 70px;
+    
 
     
 }
 
+img{
+    position: relative;
+}
 
 a{
     @include font-size(1.3rem);

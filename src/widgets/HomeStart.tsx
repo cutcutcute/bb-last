@@ -4,15 +4,25 @@ import { TitleImagesBlock } from "./titleImagesBlock";
 import { Header } from "./header";
 import { InfoBlock } from "./infoBlock";
 import { Portfolio } from "./portfolio";
+import { PriceBlock } from "./prices";
+import { Parallax } from "react-scroll-parallax";
 
 
 const HomeStart = (): React.JSX.Element =>{
     return <>
+            
             <Header/>
+            
             <LogoWidget/>
-            <TitleImagesBlock/>
-            <InfoBlock/>
+
+                <TitleImagesBlock/>
+       
+            
+                <InfoBlock/>
+              
             <Portfolio/>
+            <PriceBlock/>
+
             </>
 }
 
