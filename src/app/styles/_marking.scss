@@ -1,0 +1,52 @@
+
+%pos-abs{
+    position: absolute;
+}
+
+%pos-rel{
+    position: relative;
+}
+
+%pos-fix{
+    position: fixed;
+}
+
+
+
+%full-w{
+    width:100%;
+}
+
+%full-w-h{
+    @extend %full-w;
+    height: 100%;
+}
+
+
+%w-25{
+    width: 25%;
+}
+
+%w-25{
+    width: 25%;
+}
+
+%w-55{
+    width: 55%;
+}
+
+%w-75{
+    width: 75%;
+}
+
+@mixin top-left($y, $x){
+    top:$y;
+    left: $x;
+}
+
+
+%flex-row{
+    display: flex;
+    flex-direction: row;
+    gap:20px;
+}

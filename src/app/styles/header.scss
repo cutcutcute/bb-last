@@ -1,0 +1,15 @@
+
+
+.page-header{
+    @extend %pos-abs;
+    @extend %flex-row;
+    justify-content: flex-end;
+    align-items: center;
+    height: 90px;
+    z-index: 300;
+}
+
+.navigation{
+    @extend %pos-rel;
+    height: 80%;
+}
