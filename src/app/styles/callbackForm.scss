@@ -1,3 +1,23 @@
+
+
+
+
+%logo-after{
+    position: absolute;
+        content: "";
+        background-size: cover;
+        background-position: center;
+        top: 5px;
+        right: 15px;
+        height: 70%;
+        aspect-ratio: 1/1;
+}
+
+%form-wrapper-pos{
+    position: relative;
+    display: inline-block;
+}
+
 .callback-form{
     position: relative;
     padding: 30px 20px 30px 30px;
@@ -9,6 +29,7 @@
     margin-top: 15px;
     margin-bottom: 270px;
     min-width: 332px;
+    background: linear-gradient(180deg, rgba(203,196,186,1) 50%, rgba(203,196,186,.8) 70%);
     gap:15px;
 
     &__title{
@@ -29,6 +50,7 @@
 .form-elem{
     min-width: 230px;
     border-bottom: .01px solid rgba(0, 0, 0, .3) !important;
+    
 }
 
 .form-send{
@@ -44,7 +66,43 @@
     color: #fff;
     &:hover{
         background-color: #fff;
-        color: rgba(0, 0, 0, .75);
-        box-shadow: 0 0 10px rgba(0, 0, 0, .75);;
+        background-color: rgba(0, 0, 0, .65);
+
+    }
+}
+
+#square-form{
+    @extend %form-wrapper-pos;
+    &::after{
+        @extend %logo-after;
+        background-image: url("../images/form-svg/square.svg");
+        
+    }
+}
+
+#city-form{
+    @extend %form-wrapper-pos;
+    &::after{
+        @extend %logo-after;
+        background-image: url("../images/form-svg/city.svg");
+        
+    }
+}
+
+#phone-form{
+    @extend %form-wrapper-pos;
+    &::after{
+        @extend %logo-after;
+        background-image: url("../images/form-svg/phone.svg");
+        
+    }
+}
+
+#user-form{
+    @extend %form-wrapper-pos;
+    &::after{
+        @extend %logo-after;
+        background-image: url("../images/form-svg/user.svg");
+        
     }
 }

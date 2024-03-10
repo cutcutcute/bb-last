@@ -5,7 +5,7 @@ import { Header } from "./header";
 import { InfoBlock } from "./infoBlock";
 import { Portfolio } from "./portfolio";
 import { PriceBlock } from "./prices";
-import { useParallax } from "react-scroll-parallax";
+import { Parallax, useParallax } from "react-scroll-parallax";
 import gsap from "gsap";
 import { CallbackForm } from "./callbackForm";
 import { Footer } from "./footer";
@@ -16,6 +16,7 @@ const HomeStart = (): React.JSX.Element =>{
    
   
     return <>
+    <Parallax speed={-2}>
     <Header/>
     <LogoWidget/>
     <TitleImagesBlock/>
@@ -24,7 +25,7 @@ const HomeStart = (): React.JSX.Element =>{
     <PriceBlock/>
     <CallbackForm/>
     <Footer/>
-
+    </Parallax>
             </> 
 }
 

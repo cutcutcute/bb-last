@@ -7,6 +7,8 @@
     z-index: 1;
     width: 100%;
     min-width: 332px;
+
+
     
 
     &__wrapper{
@@ -19,8 +21,7 @@
 
         &-image-area{
             @extend %pos-rel;
-            width: 450px;
-            box-shadow: 0 0 4px #000;
+            width: 500px;
        
             
         }
@@ -31,18 +32,22 @@
 .info-text-area{
     @extend %pos-rel;
     width: 45%;
-    height: 65%;
+    height: auto;
     max-height: 500px;
     background-color: rgba(217, 196, 187, .6);
     border-radius:3px ;
     transform: translateX(-8%) translateY(-14%);
-    padding: 19px 5px 15px 20px;
+    padding: 10px 3px 5px 15px;
     z-index: 100;
   
-
+    &__next{
+        text-align: right;
+        padding-right: 22px;
+        font-weight: bold;
+    }
     &__title{
         position: relative;
-        @include font-size(2rem);
+        @include font-size(1.7rem);
     }
 
     &__text{
@@ -55,7 +60,7 @@
             
         }
         word-break:keep-all;
-        line-height: 32px;
+        line-height: 22px;
     }
 }
 
@@ -67,7 +72,7 @@
     &__wrapper{
 
         &-image-area{
-            width:200px;
+            width:240px;
         }
     }
 }
@@ -82,14 +87,14 @@
         }
 
         &__text{
-            max-height: 130px;
-            @include font-size(.7rem);
-            line-height: 22px;
+            max-height: 69px;
+            @include font-size(.6rem);
+            line-height: 13px;
         }
 
         &__next{
             max-height: 130px;
-            @include font-size(.9rem);
+            @include font-size(.8rem);
         }
     }
 }
@@ -178,7 +183,7 @@
 
 @include media-breakpoint-up(xxl){
     .info-text-area{
-        min-height: 490px;
+        min-height: 440px;
         max-width: 900px;
     }
 

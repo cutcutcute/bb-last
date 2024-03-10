@@ -26,32 +26,22 @@ export const PriceBlock = (): React.JSX.Element =>{
       };
    
       const parallax = useParallax({
-        speed:-10
+        speed:-1
       })
 
-    return <section ref={parallax.ref} className="price-block">
-                    <motion.div  initial={{scaleX: .3, x:-20}} whileInView={{scaleX: 1, x:0}} transition={{duration:.7}} className="price-block__title"><h3>
-                    <AnimateTitleText once={false} text={titleName}/>
-                    </h3></motion.div>
-                <motion.div initial={{ opacity:0}} whileInView={{opacity:1}} transition={{duration:.7}} className="price-block__color-wrapper"></motion.div>
-                <div className="price-block__cards">
-                <motion.div className="container" variants={container}
-                                                    initial="hidden"
-                                                    whileInView="visible">
-  
-                    <div className="row align-items-center gap">
-                        <motion.div variants={item} whileHover={{y:-10}} className="col m-3">
-                            <PriceCard text="Планировачное решение" price="990 р"/>
-                        </motion.div>
-                        <motion.div variants={item} whileHover={{y:-10}} className="col m-3">
-                            <PriceCard text="Индивидуальный проект интерьера" price="2490 р"/>
-                        </motion.div>
-                        <motion.div variants={item} whileHover={{y:-10}} className="col m-3">
-                            <PriceCard text="Авторский надзор" price="30 000 р"/>
-                        </motion.div>
-                    </div>
-                    </motion.div>
-                </div>
+      return <section ref={parallax.ref} className="price-block">
+              <motion.div  initial={{scaleX: .3, x:-20}} whileInView={{scaleX: 1, x:0}} transition={{duration:.7}} className="price-block__title"><h3>
+              <AnimateTitleText once={false} text={titleName} delay={.1}/>
+              </h3></motion.div>
+          <div className="container price-container" style={{maxWidth:"none"}}>
+            <div className="row">
+              <motion.div initial={{opacity:.5}} whileInView={{opacity:1}} transition={{duration:.7, ease:"easeOut"}} whileHover={{y:-10}} className="col m-3"> <PriceCard text="Планировачное решение" price="990 р"/></motion.div>
+              <motion.div initial={{opacity:.5}} whileInView={{opacity:1}} transition={{duration:.7, ease:"easeOut"}} whileHover={{y:-10}} className="col m-3"><PriceCard text="Индивидуальный проект интерьера" price="2490 р"/></motion.div>
+              <motion.div initial={{opacity:.5}} whileInView={{opacity:1}} transition={{duration:.7, ease:"easeOut"}} whileHover={{y:-10}} className="col m-3"><PriceCard text="Авторский надзор" price="30 000 р"/></motion.div>
+    
+            </div>
+          </div>           
+    
             
             </section>
 }

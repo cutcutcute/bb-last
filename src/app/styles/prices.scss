@@ -2,14 +2,14 @@
 
 .price-block{
     position: relative;
-    padding: 30px 20px 30px 30px;
+    padding: 15px 10px 15px 15px;
     flex-direction: column;
     width: 100%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     margin-top: 15px;
-    margin-bottom: 240px;
+    margin-bottom: 100px;
     min-width: 332px;
 
     &__title{
@@ -22,28 +22,18 @@
 
     }
 
-    &__color-wrapper{
-        position: absolute;
-        background-color: rgba(217, 196, 187, .6);
-        top: 5px;
-        right: 10px;
-        left: 20px;
-        bottom: 5px;
-        z-index: 1;
-        
-    }
+   
+    @include media-breakpoint-between(lg,xxl){
 
-    &__cards{
-        position: relative;
-        padding: 5px;
-        gap: 10px;
-        width:90%;
-        align-items: center;
-        z-index: 100;
+    .card-element{
+        max-width: 390px;
     }
-
- 
+}
     
+}
+
+.price-container{
+    width:90% !important;
 }
 
 
@@ -54,9 +44,9 @@
     cursor: default !important;
     border-radius: 15px;
     border: none;
-    box-shadow: 0 0 2px #000;
     height: 5%;
     margin-right: 6px;
+    background-color: rgba(203,196,186,1);
 
 
 }
@@ -68,10 +58,11 @@
     border: none;
     border-radius: 50%;
     transition: all .3s ease-out;
+    background-color: rgba(203,196,186,1);
 
     &:hover{
-        background-color: #000;
-        color: #fff;
+        background-color: rgba(203,196,186,.5);
+
     }
 }
 

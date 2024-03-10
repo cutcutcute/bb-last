@@ -5,9 +5,10 @@ import { motion } from "framer-motion";
 type Props = {
     text: string,
     once: boolean
+    delay:number
 }
 
-export const AnimateTitleText = ({text, once=false}: Props): React.JSX.Element => {
+export const AnimateTitleText = ({text, delay, once=false}: Props): React.JSX.Element => {
 
 
 
@@ -17,7 +18,7 @@ export const AnimateTitleText = ({text, once=false}: Props): React.JSX.Element =
             opacity:1,
             scale:1,
             transition:{
-                delayChildren: .1,
+                delayChildren: delay,
                 staggerChildren: .042
             }
         }

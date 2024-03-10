@@ -2,10 +2,11 @@
 
 .portfolio-block{
     @extend %pos-rel;
-    padding: 30px 20px;
+    padding: 30px 20px 120px 20px;
     justify-content: center;
     gap:50px;
-    margin-bottom: 200px;
+    margin-bottom: 75px;
+    background: linear-gradient(180deg, rgba(203,196,186,1) 50%, rgba(203,196,186,.8) 70%);
     min-width: 332px;
 }
 
@@ -18,21 +19,16 @@
 
     &__title{
         @extend %pos-rel;
-        text-transform: uppercase;
+        text-transform:capitalize;
         cursor: pointer;
         border-radius: 15px;
-        transition-property: color, background-color;
-        transition-duration: .2s;
-        transition-timing-function: ease-out;
         display: flex;
         flex-direction: column;
         justify-content: center;
         padding: 0 8px;
+        align-items: center
 
-        &:hover{
-            background-color: rgb(39, 39, 39);
-            color: white;
-        }
+       
     }
 
     &__image-area{
@@ -42,6 +38,21 @@
         overflow: hidden;
     }
 
+}
+
+.title-text{
+    width:80%;
+    transition: color .5s ease-out;
+    transition: background-color .5s ease-out;
+    transition: border-radius .01s ease;
+    border-radius: 15px 15px 0 0;
+    line-height: 22px;
+    padding-bottom: 3px;
+    &:hover{
+        background-color: rgba(0, 0, 0, .75);
+        color: rgba(255, 255, 255, .75);
+        border-radius: 15px;
+    }
 }
 
 .portfolio-image{
@@ -56,21 +67,45 @@
 }
 
 @include media-breakpoint-between(xs,sm){
+    .title-text{
+        border-bottom:.1px solid rgba(0,0,0,.3) ;
 
+
+    }
     .portfolio-block{
         flex-direction: column;
-        padding: 10px 20px;
-        margin-bottom: 150px;
+        padding: 30px 0;
+        margin-bottom: 35px;
+        margin-bottom: 100px;
+        gap:80px;
     }
 
     .living-spaces-block, .public-areas-block{
         &__image-area{
             width: 90%;
+            left: 0;
+            gap:20px;
+            
+            top:0;
         }
 
         &__title{
-            max-width: 278px;
+            max-width: none;
+            width: 100%;
+            padding: 0 3px;
+            line-height: 22px;
+            
         }
+
+        
+    }
+
+    .living-spaces-block{
+        align-items: flex-start;
+    }
+
+    .public-areas-block{
+        align-items: flex-end;
     }
 }
 

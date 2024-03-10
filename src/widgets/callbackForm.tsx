@@ -6,14 +6,15 @@ import { useParallax } from "react-scroll-parallax";
 export const CallbackForm = (): React.JSX.Element => {
 
     const parallax = useParallax({
-        speed:-15
+        speed:-2
     })
 
     return <section ref={parallax.ref} className="callback-form">
-        <div className="callback-form__title"><h3><AnimateTitleText text="Заполнить заявку" once={false}/></h3></div>   
+        <div className="callback-form__title"><h3><AnimateTitleText text="Заполнить заявку" once={false}  delay={.1}/></h3></div>   
         <div className="container form-info">
             <div className="row ">
-                <motion.div initial={{opacity:.3, y:20}} whileInView={{opacity:1, y:0}} transition={{duration:.7}} className="col"><h5>Оставьте свою заявку для дальнейшей связи</h5></motion.div>
+                <motion.div initial={{opacity:.3, y:20}} whileInView={{opacity:1, y:0}} transition={{duration:.7}} className="col"><motion.h5 initial={{opacity:0}} whileInView={{opacity:1}} transition={{duration:.4, ease:"easeInOut"}}>
+                    <strong>{<AnimateTitleText text="Оставьте свой запрос" once={false}  delay={.5}/>}</strong> и мы свяжемся с вами для консультации</motion.h5></motion.div>
             </div>
         </div>
 
@@ -22,24 +23,25 @@ export const CallbackForm = (): React.JSX.Element => {
                 <div className="col m-3">
                 <select className="form-select form-elem" aria-label="Пример выбора по умолчанию">
                     <option value="1" selected>Новостройка</option>
-                    <option value="2">Два</option>
-                    <option value="3">Три</option>
+                    <option value="2">Вторичное Жилье</option>
+                    <option value="3">Загородное Жилье</option>
+                    <option value="4">Коммерческое Помещение</option>
                 </select>
                 </div>
-                <div className="col m-3">
+                <div className="col m-3" id="city-form">
                 <input type="text" className="form-control form-elem" id="exampleFormControlInput1" placeholder="Город"/>
                 </div>
             </div>
 
             <div className="row">
-                <div className="col m-3">
+                <div className="col m-3" id="square-form">
                     <input type="text" className="form-control form-elem" id="exampleFormControlInput1" placeholder="Площадь"/>
                 </div>
-                <div className="col m-3">
+                <div className="col m-3" id="phone-form">
                     <input type="text" className="form-control form-elem" id="exampleFormControlInput1" placeholder="Телефон"/>
                 </div>
 
-                <div className="col m-3">
+                <div className="col m-3" id="user-form">
                     <input type="text" className="form-control form-elem" id="exampleFormControlInput1" placeholder="Ваше имя"/>
                 </div>
             </div>
