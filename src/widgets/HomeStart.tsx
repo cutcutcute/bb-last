@@ -7,28 +7,25 @@ import { Portfolio } from "./portfolio";
 import { PriceBlock } from "./prices";
 import { useParallax } from "react-scroll-parallax";
 import gsap from "gsap";
+import { CallbackForm } from "./callbackForm";
+import { Footer } from "./footer";
 
 const HomeStart = (): React.JSX.Element =>{
 
     
    
   
-    return <div className="wrapper">
-            <div className="content">
-            <Header/>
-            
-            <LogoWidget/>
+    return <>
+    <Header/>
+    <LogoWidget/>
+    <TitleImagesBlock/>
+    <InfoBlock/>
+    <Portfolio/>
+    <PriceBlock/>
+    <CallbackForm/>
+    <Footer/>
 
-                <TitleImagesBlock/>
-       
-            
-                <InfoBlock/>
-              
-            <Portfolio/>
-            <PriceBlock/>
-
-            </div>
-            </div>
+            </> 
 }
 
 export default HomeStart;

@@ -2,102 +2,78 @@
 
 .price-block{
     position: relative;
-    padding: 30px 20px 30px 60px;
+    padding: 30px 20px 30px 30px;
     flex-direction: column;
+    width: 100%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     margin-top: 15px;
+    margin-bottom: 240px;
+    min-width: 332px;
 
     &__title{
         position: relative;
-        border-bottom: 1px solid black;
+        border-bottom: .1px solid rgba(0, 0, 0, .3);
         text-transform: uppercase;
-        padding: 5px 40px;
+        padding: 5px 10px;
         width:90%;
         z-index: 100;
+
     }
 
     &__color-wrapper{
         position: absolute;
         background-color: rgba(217, 196, 187, .6);
         top: 5px;
-        right: 20px;
+        right: 10px;
+        left: 20px;
         bottom: 5px;
-        left: 78px;
         z-index: 1;
         
     }
 
     &__cards{
-        display: flex;
         position: relative;
-        justify-content: center;
-        padding: 30px 20px;
-        gap:30px;
-
-        &-card{
-            position: relative;
-            width: 400px;
-            height: 450px;
-            background-color: #fff;
-            z-index: 100;
-            padding: 10px;
-            border-radius: 15px;
-            gap:5px;
-        }
+        padding: 5px;
+        gap: 10px;
+        width:90%;
+        align-items: center;
+        z-index: 100;
     }
+
+ 
+    
 }
 
-.card__image-area{
+
+    
+.button-price{
     position: relative;
-    height: 70%;
+    padding: 3px 5px;
+    cursor: default !important;
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0 0 2px #000;
+    height: 5%;
+    margin-right: 6px;
+
+
 }
 
-.card__title-area{
+.button-info{
     position: relative;
-    flex: 1;
-    padding: 3px 2px;
+    height: 25%;
+    padding: 2px 7px;
+    border: none;
+    border-radius: 50%;
+    transition: all .3s ease-out;
 
-    &-text{
-        position: relative;
-        padding: 1px 2px 1px 3px;
-        flex: 1;
-        @include font-size(1.3rem);
-    }
-    &-buttons{
-        position: relative;
-
-
-        @include font-size(1.3rem);
-        gap:10px;
-        height: 50%;
-    }
-
-    &-price{
-        @extend %pos-rel;
-        width: 30%;
-        line-height: 27px;
-        padding: 1px 0;
-        text-align: center;
-        font-weight: 500;
-        height: 60%;
-        border-radius: 15px;
-        font-size: 1.4rem;
-    }
-    &-add{
-        @extend %pos-rel;
-        line-height: 27px;
-        height: 60%;
-        padding: 1px 0;
-        aspect-ratio: 1/1;
-        border-radius: 50%;
-        cursor: pointer;
-        transition: all .2s ease-out;
-
-        &:hover{
-            background-color: black;
-            color: white;
-        }
+    &:hover{
+        background-color: #000;
+        color: #fff;
     }
 }
+
+
+

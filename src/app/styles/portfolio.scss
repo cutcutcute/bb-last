@@ -5,6 +5,8 @@
     padding: 30px 20px;
     justify-content: center;
     gap:50px;
+    margin-bottom: 200px;
+    min-width: 332px;
 }
 
 
@@ -62,7 +64,7 @@
 
     .living-spaces-block, .public-areas-block{
         &__image-area{
-            width: 300px;
+            width: 90%;
         }
 
         &__title{
@@ -148,7 +150,7 @@
 
 @include media-breakpoint-up(xxl){
     .portfolio-block{
-        gap: 15px;
+        gap: 45px;
     }
 
     .living-spaces-block, .public-areas-block{

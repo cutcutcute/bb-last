@@ -7,5 +7,64 @@
     justify-content: center;
     align-items: center;
     width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+   
 }
 
+.loading-wrapper{
+    border: 1px solid white;
+        position: relative;
+        width: 350px;
+
+}
+
+.loading-svg{
+    position: relative;
+    scale:1;
+}
+
+@include media-breakpoint-between(xs,sm){
+    .loading-svg{
+        scale:.3;
+    }
+}
+
+@include media-breakpoint-between(sm,md){
+    .loading-svg{
+        scale:.6;
+    }
+    
+
+}
+
+
+@include media-breakpoint-between(md,lg){
+    .loading-svg{
+        scale:.7;
+    }
+}
+
+
+@include media-breakpoint-between(lg,xl){
+    .loading-svg{
+        scale:.8;
+    }
+}
+
+
+@include media-breakpoint-between(xl,xxl){
+    .loading-svg{
+        scale:.9;
+    }
+}
+
+
+
+@include media-breakpoint-up(xxl){
+    .loading-svg{
+        scale:1;
+    }
+}

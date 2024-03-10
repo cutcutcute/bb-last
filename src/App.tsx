@@ -1,9 +1,9 @@
 import React, {Suspense} from 'react';
 import { HashRouter, Route, Routes} from 'react-router-dom';
-
-import "./app/styles/styles.scss";
 import { MainLoading } from './widgets/loading/mainLoading';
-import HomeStart from './widgets/HomeStart';
+import "./app/styles/styles.scss";
+
+import { Home } from './pages/home';
 
 
 
@@ -11,7 +11,11 @@ function App(): React.JSX.Element {
   return (
     <HashRouter>
       <Routes>
-          <Route path='/' element={<HomeStart/>}/>
+          <Route path='/'  element={
+
+                              <Home />
+
+                          }/>
       </Routes>
     </HashRouter>
   );

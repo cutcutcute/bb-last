@@ -3,8 +3,10 @@
 .info-block{
     @extend %pos-rel;
     padding: 20px 10px;
-    margin-bottom: 1%;
+    margin-bottom: 25px;
     z-index: 1;
+    width: 100%;
+    min-width: 332px;
     
 
     &__wrapper{
@@ -58,12 +60,16 @@
 }
 
 @include media-breakpoint-between(xs,sm){
-    .info-block__wrapper{
+
+    .info-block{
+        padding: 0;
+    &__wrapper{
 
         &-image-area{
             width:200px;
         }
     }
+}
 
 
 

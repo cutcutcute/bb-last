@@ -3,7 +3,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import { motion } from "framer-motion";
 
 export const Header = (): React.JSX.Element => {
-    return <motion.header initial={{opacity:0, y:-90}} animate={{opacity:1, y:0}} transition={{duration:.8}} className="page-header w-100 px-2">
+    return <motion.header initial={{opacity:0, y:-90}} animate={{opacity:1, y:0}} transition={{duration:.8}} className="page-header px-2">
         <nav className="navigation w-75 d-flex align-items-center" >
             <Container className="navbarMenu">
                 <Row className="text-nowrap flex-nowrap justify-content-end text-center justify-content-md-center">
