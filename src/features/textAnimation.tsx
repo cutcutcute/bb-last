@@ -24,7 +24,7 @@ export const AnimateTitleText = ({text, once=false}: Props): React.JSX.Element =
     };
 
     const item = {
-        hidden:{y:80, opacity:0},
+        hidden:{y:10, opacity:0},
         visible:{
             y:0, 
             opacity:1

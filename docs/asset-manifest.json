@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/gh-pages-react/static/css/main.80fa0265.css",
+    "main.js": "/gh-pages-react/static/js/main.ab7daea7.js",
+    "static/js/264.504775b3.chunk.js": "/gh-pages-react/static/js/264.504775b3.chunk.js",
+    "static/js/653.11a72ec0.chunk.js": "/gh-pages-react/static/js/653.11a72ec0.chunk.js",
+    "static/media/cr2.jpg": "/gh-pages-react/static/media/cr2.c10f146a2a46e344c499.jpg",
+    "static/media/cr3.jpg": "/gh-pages-react/static/media/cr3.23a7505ba437746fe116.jpg",
+    "static/media/cr1.jpg": "/gh-pages-react/static/media/cr1.e1f8bdc6ad0233206814.jpg",
+    "static/media/living-spaced (2).jpg": "/gh-pages-react/static/media/living-spaced (2).d5d9f15ba4cc453306bd.jpg",
+    "static/media/cr4.jpg": "/gh-pages-react/static/media/cr4.29313ce2cec062eda465.jpg",
+    "static/media/centurygothic.ttf": "/gh-pages-react/static/media/centurygothic.b194aa2bd524e2c973f7.ttf",
+    "static/media/info.jpeg": "/gh-pages-react/static/media/info.2311e7e97b77be0fa94b.jpeg",
+    "static/media/smallLogo.svg": "/gh-pages-react/static/media/smallLogo.659e9016803c2ac8356eb2cd2ddceea0.svg",
+    "index.html": "/gh-pages-react/index.html",
+    "main.80fa0265.css.map": "/gh-pages-react/static/css/main.80fa0265.css.map",
+    "main.ab7daea7.js.map": "/gh-pages-react/static/js/main.ab7daea7.js.map",
+    "264.504775b3.chunk.js.map": "/gh-pages-react/static/js/264.504775b3.chunk.js.map",
+    "653.11a72ec0.chunk.js.map": "/gh-pages-react/static/js/653.11a72ec0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.80fa0265.css",
+    "static/js/main.ab7daea7.js"
+  ]
+}

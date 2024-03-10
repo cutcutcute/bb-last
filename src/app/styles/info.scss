@@ -2,8 +2,8 @@
 
 .info-block{
     @extend %pos-rel;
-    padding: 20px 10px;
-    margin-bottom: 25px;
+    padding: 20px 10px 10px 10px;
+    margin-bottom: 10px;
     z-index: 1;
     width: 100%;
     min-width: 332px;
@@ -63,6 +63,7 @@
 
     .info-block{
         padding: 0;
+        margin-bottom: 10px;
     &__wrapper{
 
         &-image-area{

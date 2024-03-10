@@ -2,9 +2,14 @@
 body{
     overflow-x: hidden;
     scroll-behavior: smooth;
+    
     &::-webkit-scrollbar{
         display: none;
         
     }
+}
+
+html{
+    min-width: 332px;
 }
 

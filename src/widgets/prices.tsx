@@ -13,10 +13,7 @@ export const PriceBlock = (): React.JSX.Element =>{
         visible: {
           opacity: 1,
           scale: 1,
-          transition: {
-            delayChildren: 0.1,
-            staggerChildren: 0.1
-          }
+
         }
       };
       
@@ -33,10 +30,10 @@ export const PriceBlock = (): React.JSX.Element =>{
       })
 
     return <section ref={parallax.ref} className="price-block">
-                    <motion.div  initial={{scaleX: .3, x:-200}} whileInView={{scaleX: 1, x:0}} transition={{duration:.7}} className="price-block__title"><h3>
+                    <motion.div  initial={{scaleX: .3, x:-20}} whileInView={{scaleX: 1, x:0}} transition={{duration:.7}} className="price-block__title"><h3>
                     <AnimateTitleText once={false} text={titleName}/>
                     </h3></motion.div>
-                <motion.div initial={{x:200, opacity:0}} whileInView={{x:0, opacity:1}} transition={{duration:.7}} className="price-block__color-wrapper"></motion.div>
+                <motion.div initial={{ opacity:0}} whileInView={{opacity:1}} transition={{duration:.7}} className="price-block__color-wrapper"></motion.div>
                 <div className="price-block__cards">
                 <motion.div className="container" variants={container}
                                                     initial="hidden"

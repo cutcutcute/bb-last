@@ -12,7 +12,7 @@ export const PriceCard = (props: CardProps):React.JSX.Element => {
     return <Card className="bg-light" style={{minWidth:226, borderRadius:15}}>
 
         <Card.Body>
-            <Card.Title className="d-flex align-items-end" style={{height:100}}>{props.text}</Card.Title>
+            <Card.Title className="d-flex align-items-end" style={{height:200}}>{props.text}</Card.Title>
 
             <button className="button-price">{props.price}</button>
             <button className="button-info">+</button>
