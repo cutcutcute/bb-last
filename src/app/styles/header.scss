@@ -1,6 +1,11 @@
 %medium-size-text{
-    @include font-size(1.6rem);
+    @include font-size(1.35rem);
 }
+
+%low-size-text{
+    @include font-size(1.1rem);
+}
+
 
 @mixin load-background-image($url, $width, $height){
     background-image: url($url);
@@ -11,15 +16,33 @@
 
 }
 
-%low-size-text{
-    @include font-size(1.3rem);
-}
 
 %link-hovering{
     color:rgba(255,255,255,.9);
-    text-shadow: 0 0 2px rgba(255,255,255,.7)
+    text-shadow: 0 0 3px rgba(255,255,255,.7)
     
 }
+
+
+
+
+$page-header-mobile-height:70px;
+$page-header-mobile-background: rgba(255,255,255,.9);
+
+
+$page-header-desktop-height:120px;
+
+
+
+
+
+
+
+.mobile-menu-button{
+    display: none;
+}
+
+
 
 .page-header{
     @extend %pos-abs;
@@ -27,7 +50,7 @@
     justify-content: flex-end;
     align-items: center;
     width: 100%;
-    height: 120px;
+    height: $page-header-desktop-height;
     z-index: 300;
 }
 
@@ -35,6 +58,10 @@
     @extend %pos-rel;
     height: 80%;
     color: rgba(255,255,255,.8);
+
+    &-container{
+        max-width: none !important;
+    }
 
     &__item{
         &-text{
@@ -67,7 +94,18 @@
 
 /*Разрешение заголовка от 0 до 768px*/
 @include media-breakpoint-between(xs,md){
+
+    .page-header{
+        height: $page-header-mobile-height;
+        background: $page-header-mobile-background;
+    }
+
     .navigation{
         display: none;
+    }
+
+    .mobile-menu-button{
+        display: block;
+        aspect-ratio: 1/1;
     }
 }

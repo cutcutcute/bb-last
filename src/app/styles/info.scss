@@ -47,7 +47,8 @@
     }
     &__title{
         position: relative;
-        @include font-size(1.4rem);
+        line-height: 22px;
+        @include font-size(1.3rem);
     }
 
     &__text{
@@ -83,7 +84,8 @@
         width: 75%;
         max-height: 400px;
         &__title{
-            @include font-size(.77rem);
+            @include font-size(.67rem);
+            line-height: 12px;
         }
 
         &__text{
@@ -108,7 +110,7 @@
             
             &-image-area{
     
-                width:280px;
+                width:330px;
             }
         }
     }
@@ -145,7 +147,7 @@
 
             &-image-area{
     
-                width:300px;
+                width:380px;
             }
         }
 
@@ -190,7 +192,6 @@
 
 @include media-breakpoint-up(xxl){
     .info-text-area{
-        min-height: 440px;
         max-width: 900px;
     }
 
