@@ -31,6 +31,7 @@
 
 
 
+
 }
 
 
@@ -71,10 +72,14 @@ h5{
 
 img{
     position: relative;
+    border: none;
+    box-shadow: none;
+
 }
 
 a{
-    @include font-size(1.3rem);
+    text-decoration: none;
+    color: rgba(255,255,255,.8);
     
 }
 

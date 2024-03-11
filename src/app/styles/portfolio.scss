@@ -1,5 +1,16 @@
 
 
+
+@mixin title-block-small-screen($justify-content){
+    max-width: none;
+    width: 100%;
+    line-height: 22px;
+    flex-direction: row;
+    padding: 0;
+    justify-content: $justify-content;
+    align-items: stretch;
+}
+
 .portfolio-block{
     @extend %pos-rel;
     padding: 30px 20px 120px 20px;
@@ -21,13 +32,11 @@
         @extend %pos-rel;
         text-transform:capitalize;
         cursor: pointer;
-        border-radius: 15px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         padding: 0 8px;
-        align-items: center
-
+        align-items: center;
        
     }
 
@@ -42,16 +51,16 @@
 
 .title-text{
     width:80%;
-    transition: color .5s ease-out;
-    transition: background-color .5s ease-out;
-    transition: border-radius .01s ease;
-    border-radius: 15px 15px 0 0;
+    transition: all .5s ease-out;
     line-height: 22px;
+    @include font-size(1.25rem);
+    text-align: center;
     padding-bottom: 3px;
+    margin-bottom:0 !important;
     &:hover{
         background-color: rgba(0, 0, 0, .75);
         color: rgba(255, 255, 255, .75);
-        border-radius: 15px;
+
     }
 }
 
@@ -68,14 +77,17 @@
 
 @include media-breakpoint-between(xs,sm){
     .title-text{
-        border-bottom:.1px solid rgba(0,0,0,.3) ;
+        border-bottom:.1px solid rgba(0,0,0,.3);
+        height: 100%;
+        width: 90%;
+        @include font-size(1.35rem);
+        padding: 3px 2px;
 
 
     }
     .portfolio-block{
         flex-direction: column;
         padding: 30px 0;
-        margin-bottom: 35px;
         margin-bottom: 100px;
         gap:80px;
     }
@@ -89,23 +101,31 @@
             top:0;
         }
 
-        &__title{
-            max-width: none;
-            width: 100%;
-            padding: 0 3px;
-            line-height: 22px;
-            
-        }
+        
 
         
     }
 
     .living-spaces-block{
         align-items: flex-start;
-    }
+        &__title{
+            @include title-block-small-screen(flex-start);
+            
+    }}
 
     .public-areas-block{
         align-items: flex-end;
+        &__title{
+            @include title-block-small-screen(flex-end);
+
+            
+        }
+    }
+    .living-s-text{
+        text-align: right;
+    }
+    .public-a-text{
+        text-align: left;
     }
 }
 
@@ -130,6 +150,9 @@
 
 
 @include media-breakpoint-between(md,lg){
+    .title-text{
+        width:100%;
+    }
     .portfolio-block{
         justify-content: space-around;
     }
@@ -148,6 +171,9 @@
 
 
 @include media-breakpoint-between(lg,xl){
+    .title-text{
+        width:100%;
+    }
     .portfolio-block{
         justify-content: space-around;
     }
@@ -166,6 +192,9 @@
 
 
 @include media-breakpoint-between(xl,xxl){
+    .title-text{
+        width:100%;
+    }
     .portfolio-block{
         justify-content: space-around;
     }
@@ -185,6 +214,9 @@
 
 
 @include media-breakpoint-up(xxl){
+    .title-text{
+        width:100%;
+    }
     .portfolio-block{
         gap: 45px;
     }

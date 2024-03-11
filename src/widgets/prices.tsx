@@ -31,7 +31,7 @@ export const PriceBlock = (): React.JSX.Element =>{
 
       return <section ref={parallax.ref} className="price-block">
               <motion.div  initial={{scaleX: .3, x:-20}} whileInView={{scaleX: 1, x:0}} transition={{duration:.7}} className="price-block__title"><h3>
-              <AnimateTitleText once={false} text={titleName} delay={.1}/>
+              <AnimateTitleText staggerChildren={.042} wordWrapper={false} once={false} text={titleName} delay={.1}/>
               </h3></motion.div>
           <div className="container price-container" style={{maxWidth:"none"}}>
             <div className="row">

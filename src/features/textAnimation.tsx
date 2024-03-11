@@ -5,10 +5,12 @@ import { motion } from "framer-motion";
 type Props = {
     text: string,
     once: boolean
-    delay:number
+    delay:number,
+    wordWrapper: boolean,
+    staggerChildren:number
 }
 
-export const AnimateTitleText = ({text, delay, once=false}: Props): React.JSX.Element => {
+export const AnimateTitleText = ({text, delay, staggerChildren, once=false, wordWrapper = false}: Props): React.JSX.Element => {
 
 
 
@@ -19,7 +21,7 @@ export const AnimateTitleText = ({text, delay, once=false}: Props): React.JSX.El
             scale:1,
             transition:{
                 delayChildren: delay,
-                staggerChildren: .042
+                staggerChildren: staggerChildren
             }
         }
     };
@@ -34,10 +36,11 @@ export const AnimateTitleText = ({text, delay, once=false}: Props): React.JSX.El
     }
 
     const anomationText: string = text.replaceAll(" ", "\u00A0");
+    const splitParametr =  wordWrapper === true?"\u00A0":"";
     return <motion.div variants={container} initial="hidden" whileInView="visible" viewport={{once:once}}>
         {
-            anomationText.split("").map((char, index)=>(
-                <motion.span style={{display:"inline-block"}} key={index} variants={item}>{char}</motion.span>
+            anomationText.split(splitParametr).map((char, index)=>(
+                <motion.span style={{display:"inline-block"}} key={index} variants={item}>{char}{splitParametr}</motion.span>
             ))
 
             }

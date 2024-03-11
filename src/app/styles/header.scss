@@ -1,4 +1,25 @@
+%medium-size-text{
+    @include font-size(1.6rem);
+}
 
+@mixin load-background-image($url, $width, $height){
+    background-image: url($url);
+    background-size: cover;
+    background-position: center;
+    width:$width;
+    height: $height;
+
+}
+
+%low-size-text{
+    @include font-size(1.3rem);
+}
+
+%link-hovering{
+    color:rgba(255,255,255,.9);
+    text-shadow: 0 0 2px rgba(255,255,255,.7)
+    
+}
 
 .page-header{
     @extend %pos-abs;
@@ -6,11 +27,47 @@
     justify-content: flex-end;
     align-items: center;
     width: 100%;
-    height: 90px;
+    height: 120px;
     z-index: 300;
 }
 
 .navigation{
     @extend %pos-rel;
     height: 80%;
+    color: rgba(255,255,255,.8);
+
+    &__item{
+        &-text{
+            @extend %transition-timing;
+            cursor: pointer;
+            &:hover{
+                @extend %link-hovering;
+            }
+        }
+
+        &-image{
+
+            @extend %pos-rel;
+            @include load-background-image("../../shared/logo/logo.png",100% ,70px);
+            min-width:160px;
+
+
+        }
+    }
+}
+
+.medium-size-level{
+    @extend %medium-size-text;
+}
+
+.low-size-level{
+    @extend %low-size-text;
+
+}
+
+/*Разрешение заголовка от 0 до 768px*/
+@include media-breakpoint-between(xs,md){
+    .navigation{
+        display: none;
+    }
 }

@@ -34,7 +34,7 @@
     width: 45%;
     height: auto;
     max-height: 500px;
-    background-color: rgba(217, 196, 187, .6);
+    background: linear-gradient(180deg, rgba(203,196,186,1) 50%, rgba(203,196,186,.8) 70%);
     border-radius:3px ;
     transform: translateX(-8%) translateY(-14%);
     padding: 10px 3px 5px 15px;
@@ -47,7 +47,7 @@
     }
     &__title{
         position: relative;
-        @include font-size(1.7rem);
+        @include font-size(1.4rem);
     }
 
     &__text{
@@ -72,7 +72,7 @@
     &__wrapper{
 
         &-image-area{
-            width:240px;
+            width:340px;
         }
     }
 }
@@ -83,7 +83,7 @@
         width: 75%;
         max-height: 400px;
         &__title{
-            @include font-size(1rem);
+            @include font-size(.77rem);
         }
 
         &__text{
@@ -101,14 +101,17 @@
 
 
 @include media-breakpoint-between(sm,md){
-    .info-block__wrapper{
-
-        &-image-area{
-  
-            width:280px;
+    .info-block{
+        margin-bottom: 50px;
+    
+        &__wrapper{
+            
+            &-image-area{
+    
+                width:280px;
+            }
         }
     }
-
 
 
 
@@ -136,15 +139,17 @@
 
 
 @include media-breakpoint-between(md,lg){
-    .info-block__wrapper{
+    .info-block{
+        margin-bottom: 70px;
+        &__wrapper{
 
-        &-image-area{
-  
-            width:300px;
+            &-image-area{
+    
+                width:300px;
+            }
         }
+
     }
-
-
     .info-text-area{
         width: 65%;
         max-height: 400px;
@@ -157,7 +162,9 @@
 
 
 @include media-breakpoint-between(lg,xl){
-    .info-block__wrapper{
+    .info-block{
+        margin-bottom: 70px;
+        &__wrapper{
 
         &-image-area{
   
@@ -166,7 +173,7 @@
 
       
     }
-
+    }
 
     .info-text-area{
         width: 65%;
