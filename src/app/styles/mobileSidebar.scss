@@ -30,6 +30,7 @@
     width: 100%;
     background: white;
     z-index: -1;
+    overflow-y: hidden;
 
 
     
@@ -134,9 +135,9 @@
 
   .sidebar-contacts{
     position:fixed;
-    bottom: 55px;
+    top: 80%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%) translateY(-50%);
     font-size: 1.2rem;
     &__title{
       text-transform: uppercase;
@@ -154,5 +155,11 @@
 
       
      }
+  }
+}
+
+@include media-breakpoint-between(sm,md){
+  .sidebar-contacts{
+    top:60%;
   }
 }
