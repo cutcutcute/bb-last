@@ -1,4 +1,4 @@
-import React, {useRef} from "react";
+import React, {useEffect, useRef} from "react";
 import { motion, useCycle } from "framer-motion";
 import { NavigationItem } from "../shared/navigationItem";
 import { useDimensions } from "../features/hooks/useDimensions";
@@ -36,7 +36,18 @@ export const Header = (): React.JSX.Element => {
     const containerRef = useRef(null);
     const { height } = useDimensions(containerRef);
    
-    
+    const disableScroll = () => {
+      document.getElementsByTagName("html")[0].style.overflowY = "hidden";
+    }
+
+    const enableScroll = () => {
+      document.getElementsByTagName("html")[0].style.overflowY = "scroll";
+    }
+
+
+    useEffect(()=>{
+      isOpen?disableScroll():enableScroll();
+    })
 
     return <> 
     <motion.header  initial={{opacity:0, y:-90}} animate={{opacity:1, y:0}} transition={{duration:.8}} className="page-header px-2">
