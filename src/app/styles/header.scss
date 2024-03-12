@@ -26,8 +26,8 @@
 
 
 
-$page-header-mobile-height:70px;
-$page-header-mobile-background: rgba(255,255,255,.9);
+$page-header-mobile-height:80px;
+$page-header-mobile-background: rgba(255,255,255,1);
 
 
 $page-header-desktop-height:120px;
@@ -75,7 +75,7 @@ $page-header-desktop-height:120px;
         &-image{
 
             @extend %pos-rel;
-            @include load-background-image("../../shared/logo/logo.png",100% ,70px);
+            @include load-background-image("../../shared/logo/logo.svg",100% ,70px);
             min-width:160px;
 
 
@@ -96,7 +96,10 @@ $page-header-desktop-height:120px;
 @include media-breakpoint-between(xs,md){
 
     .page-header{
+        position: fixed;
         height: $page-header-mobile-height;
+        top:0;
+        left:0;
         background: $page-header-mobile-background;
     }
 

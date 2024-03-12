@@ -18,22 +18,23 @@ const variants = {
   }
 };
 
-const colors = ["#FF008C", "#D309E1", "#9C1AFF", "#7700FF", "#4400FF"];
+
 
 type Props = {
-    i: number
+    i: number,
+    text: string,
+    link: string
 }
 
 export const MenuItem = (props: Props) => {
-  const style = { border: `2px solid ${colors[props.i]}` };
   return (
     <motion.li className="sidebar-element"
       variants={variants}
-      whileHover={{ scale: 1.1 }}
+      whileHover={{ textShadow:"0 0 2px rgba(0,0,0,.4)" }}
       whileTap={{ scale: 0.95 }}
     >
-      <div className="icon-placeholder" style={style} />
-      <div className="text-placeholder" style={style} />
+
+      <div className="text-placeholder" >{props.text}</div>
     </motion.li>
   );
 };

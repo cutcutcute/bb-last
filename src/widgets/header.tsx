@@ -5,10 +5,11 @@ import { useDimensions } from "../features/hooks/useDimensions";
 import { Navigation } from "./Navigation";
 import { MenuToggle } from "../shared/buttons/MenuToggle";
 import { useParallax } from "react-scroll-parallax";
+import { SideBarContacts } from "../shared/SideBarContacts";
 
 const sidebar = {
     open: (height = 800) => ({
-      clipPath: `circle(${height * 1 + 100}px at 20px 20px)`,
+      clipPath: `circle(${height * 1 + 200}px at 40px 40px)`,
       transition: {
         type: "spring",
         stiffness: 20,
@@ -16,16 +17,18 @@ const sidebar = {
       }
     }),
     closed: {
-      clipPath: "circle(20px at 40px 40px)",
+      clipPath: "circle(30px at 40px 40px)",
       transition: {
-        delay: 0.5,
+        
         type: "spring",
         stiffness: 400,
-        damping: 40
+        damping: 40,
+
       }
     }
   };
 
+  
 
 export const Header = (): React.JSX.Element => {
 
@@ -33,6 +36,7 @@ export const Header = (): React.JSX.Element => {
     const containerRef = useRef(null);
     const { height } = useDimensions(containerRef);
    
+    
 
     return <> 
     <motion.header  initial={{opacity:0, y:-90}} animate={{opacity:1, y:0}} transition={{duration:.8}} className="page-header px-2">
@@ -60,10 +64,12 @@ export const Header = (): React.JSX.Element => {
             animate={isOpen ? "open" : "closed"}
             custom={height}
             ref={containerRef}
+            
         >
         <motion.div className="background-sidebar" variants={sidebar} />
-            <Navigation />
+            <Navigation display={isOpen}/>
             <MenuToggle toggle={() => toggleOpen()} />
+            <SideBarContacts isOpen={isOpen}/>
         </motion.nav>
          </>
     } 

@@ -11,12 +11,20 @@ const variants = {
   }
 };
 
-export const Navigation = () => (
-  <motion.ul className="sidebar-list" variants={variants}>
-    {itemIds.map(i => (
-      <MenuItem i={i} key={i} />
+type Props = {
+  display:boolean
+}
+
+export const Navigation = (props: Props) => (
+  <motion.ul className="sidebar-list" style={{display:props.display?"block":"none"}} variants={variants}>
+    {itemIds.map(item => (
+      <MenuItem i={item.id} key={item.id} text={item.text} link={item.link}  />
     ))}
   </motion.ul>
 );
 
-const itemIds = [0, 1, 2, 3, 4];
+const itemIds = [{id:0, text:"Главная", link:"/"}, 
+{id:1, text:"Портфолио", link:"/portfolio"},{
+  id:2, text:"Услуги", link:"/price"},
+  {id:3, text:"О нас", link:"/about"},
+  {id:4, text:"Контакты", link:"/contacts"}];

@@ -5,11 +5,8 @@ import { useParallax } from "react-scroll-parallax";
 
 export const CallbackForm = (): React.JSX.Element => {
 
-    const parallax = useParallax({
-        speed:-2
-    })
 
-    return <section ref={parallax.ref} className="callback-form">
+    return <section className="callback-form">
         <div className="callback-form__title"><h3><AnimateTitleText staggerChildren={.042} wordWrapper={false} text="Заполнить заявку" once={false}  delay={.1}/></h3></div>   
         <div className="container form-info">
             <div className="row ">

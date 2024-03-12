@@ -5,13 +5,8 @@ import { motion } from "framer-motion";
 import { useParallax } from "react-scroll-parallax";
 
 export const InfoBlock = (): React.JSX.Element =>{
-    const imageParallax = useParallax({
-        speed:-2,
-        easing: "easeOut", 
-        shouldDisableScalingTranslations: true
-    })
- 
-    return <section  ref={imageParallax.ref} className="info-block h-auto">
+
+    return <section  className="info-block h-auto">
         <div className="info-block__wrapper px-3 d-flex">
             <motion.section initial={{opacity:0, y:300}} whileInView={{opacity:1, y:0}} transition={{duration:1.2}} viewport={{once:true}} className="info-block__wrapper-image-area ">
                 <img src={Image} className="info-image img-fluid " alt="" />

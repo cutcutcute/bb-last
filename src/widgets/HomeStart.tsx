@@ -16,15 +16,16 @@ const HomeStart = (): React.JSX.Element =>{
    
   
     return <>
-    <Parallax speed={-2}>
+    
     <Header/>
+
     <TitleImagesBlock/>
     <InfoBlock/>
     <Portfolio/>
     <PriceBlock/>
     <CallbackForm/>
     <Footer/>
-    </Parallax>
+
             </> 
 }
 

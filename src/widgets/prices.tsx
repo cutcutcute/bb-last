@@ -25,11 +25,9 @@ export const PriceBlock = (): React.JSX.Element =>{
         }
       };
    
-      const parallax = useParallax({
-        speed:-1
-      })
 
-      return <section ref={parallax.ref} className="price-block">
+
+      return <section className="price-block">
               <motion.div  initial={{scaleX: .3, x:-20}} whileInView={{scaleX: 1, x:0}} transition={{duration:.7}} className="price-block__title"><h3>
               <AnimateTitleText staggerChildren={.042} wordWrapper={false} once={false} text={titleName} delay={.1}/>
               </h3></motion.div>

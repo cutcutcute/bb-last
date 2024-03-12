@@ -12,6 +12,8 @@
     visibility: hidden;
 
 
+
+
   }
   
   @include media-breakpoint-between(xs,md){
@@ -21,14 +23,19 @@
     }
 }
   .background-sidebar {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     bottom: 0;
-    width: 250px;
-    background: linear-gradient(180deg, rgba(203,196,186,1) 50%, rgba(203,196,186,.8) 70%);
+    width: 100%;
+    background: white;
+    z-index: -1;
+
+
+    
 
 }
+
 
 
 .blur-mobile{
@@ -59,19 +66,20 @@
 }
   
   .button-menu-toggle {
+    position: fixed;
     outline: none;
     border: none;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     cursor: pointer;
-    position: absolute;
-    top: 20px;
+    top: 10px;
     left: 10px;
     width: 60px;
-    height: 40px;
+    height: 60px;
     border-radius: 50%;
     background: transparent;
+
   }
   
   ul.sidebar-list,
@@ -81,9 +89,10 @@
   }
   
   ul.sidebar-list {
-    padding: 25px;
-    position: absolute;
-    top: 100px;
+    padding: 25px 10px 25px 25px;
+    position: fixed;
+    top: 35px;
+    right: 3px;
     width: 230px;
     z-index:1000
 
@@ -94,22 +103,17 @@
     margin-bottom: 20px;
     display: flex;
     align-items: center;
+    justify-content: flex-end;
     cursor: pointer;
   }
   
-  .icon-placeholder {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    flex: 20px 0;
-    margin-right: 20px;
-  }
+
   
   .text-placeholder {
     border-radius: 5px;
-    width: 200px;
-    height: 20px;
-    flex: 1;
+    font-size: 1.3rem;
+    text-align: start;
+    flex: .75;
   }
   
   .refresh {
@@ -127,3 +131,28 @@
     cursor: pointer;
   }
   
+
+  .sidebar-contacts{
+    position:fixed;
+    bottom: 55px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.2rem;
+    &__title{
+      text-transform: uppercase;
+      text-align: center;
+    }
+    &__contact{
+      font-size: 1rem;
+    }
+    &__links{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+     &-icon{
+      width: 30px;
+
+      
+     }
+  }
+}
