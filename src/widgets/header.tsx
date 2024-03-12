@@ -8,7 +8,7 @@ import { useParallax } from "react-scroll-parallax";
 import { SideBarContacts } from "../shared/SideBarContacts";
 
 const sidebar = {
-    open: (height = 800) => ({
+    open: (height = 2000) => ({
       clipPath: `circle(${height * 1 + 200}px at 40px 40px)`,
       transition: {
         type: "spring",
