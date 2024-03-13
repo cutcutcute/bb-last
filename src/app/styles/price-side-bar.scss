@@ -1,0 +1,70 @@
+
+
+
+.price-side-bar{
+    position: fixed;
+    background-color: rgba(0,0,0,.45);
+    inset: 0;
+    z-index: 500;
+    display: flex;
+    justify-content: flex-end;
+
+    &__window{
+        position: relative;
+        height: 100%;
+        width: 100%;
+        max-width: 600px;
+        background-color: rgba(0,0,0,.85);
+        z-index: 600;
+
+        &-close-wrapper{
+            position: absolute;
+            top:20px;
+            right: 20px;
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+        }
+
+        &-info{
+            position: relative;
+            margin-top: 60px;
+
+            
+            &-title, &-price, &-text{
+                color: #fff;
+                @include font-size(1.2rem);
+                margin-bottom: 20px;
+                cursor: default;
+                &::selection{
+                    background-color: none;
+                    color:rgba(255,255,255, .7);
+                }
+                
+            }
+
+            &-title{
+                text-transform: uppercase;
+                
+            }
+
+            &-text{
+                @include font-size(1rem);
+
+                
+            }
+
+            &-price{
+                @include font-size(1.1rem)
+            }
+        }
+    }
+
+}
+
+.sidebar-text{
+    &::selection{
+        background-color: none;
+        color:rgba(255,255,255, .7); 
+    }
+}

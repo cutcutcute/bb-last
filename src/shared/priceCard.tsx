@@ -4,7 +4,8 @@ import {Button} from "react-bootstrap";
 
 type CardProps = {
     text: string,
-    price: string
+    price: string,
+    handleSelect: ()=>void
 }
 
 export const PriceCard = (props: CardProps):React.JSX.Element => {
@@ -15,7 +16,7 @@ export const PriceCard = (props: CardProps):React.JSX.Element => {
             <Card.Title className="d-flex align-items-end justify-content-center" style={{height:75, fontWeight:600}}><p>{props.text}</p></Card.Title>
 
             <button className="button-price">{props.price}</button>
-            <button className="button-info">+</button>
+            <button className="button-info" onClick={props.handleSelect}>+</button>
         </Card.Body>
         </Card>
 }
