@@ -1,18 +1,23 @@
 {
   "files": {
-    "main.css": "/bb-last/static/css/main.e51ba321.css",
-    "main.js": "/bb-last/static/js/main.290166fd.js",
-    "static/js/136.12893837.chunk.js": "/bb-last/static/js/136.12893837.chunk.js",
+    "main.css": "/bb-last/static/css/main.2ebee76e.css",
+    "main.js": "/bb-last/static/js/main.646d6a03.js",
+    "static/js/82.daeea9e7.chunk.js": "/bb-last/static/js/82.daeea9e7.chunk.js",
     "static/js/210.4aff1c0a.chunk.js": "/bb-last/static/js/210.4aff1c0a.chunk.js",
+    "static/media/mcr1.jpg": "/bb-last/static/media/mcr1.a7c352b8e0879aa89912.jpg",
+    "static/media/mcr2.jpg": "/bb-last/static/media/mcr2.97238a6b5c5fe1f4a4e2.jpg",
+    "static/media/mcr3.jpg": "/bb-last/static/media/mcr3.ce1e84c42d2674a4ebe0.jpg",
     "static/media/cr2.jpg": "/bb-last/static/media/cr2.c10f146a2a46e344c499.jpg",
     "static/media/living-spaced (2).jpg": "/bb-last/static/media/living-spaced (2).c10f146a2a46e344c499.jpg",
+    "static/media/mcr4.jpg": "/bb-last/static/media/mcr4.a0adb96fe8256832b234.jpg",
     "static/media/cr3.jpg": "/bb-last/static/media/cr3.23a7505ba437746fe116.jpg",
     "static/media/public-areas.jpg": "/bb-last/static/media/public-areas.23a7505ba437746fe116.jpg",
     "static/media/cr1.jpg": "/bb-last/static/media/cr1.e1f8bdc6ad0233206814.jpg",
     "static/media/cr4.jpg": "/bb-last/static/media/cr4.29313ce2cec062eda465.jpg",
     "static/media/centurygothic.ttf": "/bb-last/static/media/centurygothic.b194aa2bd524e2c973f7.ttf",
     "static/media/info.jpeg": "/bb-last/static/media/info.2311e7e97b77be0fa94b.jpeg",
-    "static/media/logo.svg": "/bb-last/static/media/logo.61d45789fcd72b65b397.svg",
+    "static/media/logo.svg": "/bb-last/static/media/logo.16bf8b44d650374c8f79.svg",
+    "static/media/smallLogo.svg": "/bb-last/static/media/smallLogo.127d2ec69219ba7e3677a1f8b015832d.svg",
     "static/media/square.svg": "/bb-last/static/media/square.0ebe7c7385c7726a1a74.svg",
     "static/media/instagram.svg": "/bb-last/static/media/instagram.07a3eab8cb96d363fc4db37b52ef01e5.svg",
     "static/media/phone.svg": "/bb-last/static/media/phone.a04a5621b6e137278f9f.svg",
@@ -21,13 +26,13 @@
     "static/media/mail.svg": "/bb-last/static/media/mail.1400620f44733f3e9eacace678b71162.svg",
     "static/media/user.svg": "/bb-last/static/media/user.6c3be22464a0023cca5d.svg",
     "index.html": "/bb-last/index.html",
-    "main.e51ba321.css.map": "/bb-last/static/css/main.e51ba321.css.map",
-    "main.290166fd.js.map": "/bb-last/static/js/main.290166fd.js.map",
-    "136.12893837.chunk.js.map": "/bb-last/static/js/136.12893837.chunk.js.map",
+    "main.2ebee76e.css.map": "/bb-last/static/css/main.2ebee76e.css.map",
+    "main.646d6a03.js.map": "/bb-last/static/js/main.646d6a03.js.map",
+    "82.daeea9e7.chunk.js.map": "/bb-last/static/js/82.daeea9e7.chunk.js.map",
     "210.4aff1c0a.chunk.js.map": "/bb-last/static/js/210.4aff1c0a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e51ba321.css",
-    "static/js/main.290166fd.js"
+    "static/css/main.2ebee76e.css",
+    "static/js/main.646d6a03.js"
   ]
 }

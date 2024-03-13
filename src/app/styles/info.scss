@@ -41,9 +41,10 @@
     z-index: 100;
   
     &__next{
+        position: relative;
         text-align: right;
         padding-right: 22px;
-        font-weight: bold;
+        font-weight: normal;
     }
     &__title{
         position: relative;
@@ -69,11 +70,11 @@
 
     .info-block{
         padding: 0;
-        margin-bottom: 10px;
+        margin-bottom: 110px;
     &__wrapper{
 
         &-image-area{
-            width:340px;
+            width:380px;
         }
     }
 }
@@ -92,11 +93,13 @@
             max-height: 69px;
             @include font-size(.6rem);
             line-height: 13px;
+            overflow-y: scroll;
         }
 
         &__next{
             max-height: 130px;
-            @include font-size(.8rem);
+            padding-top: 12px;
+            @include font-size(.6rem);
         }
     }
 }
@@ -104,13 +107,13 @@
 
 @include media-breakpoint-between(sm,md){
     .info-block{
-        margin-bottom: 50px;
+        margin-bottom: 110px;
     
         &__wrapper{
             
             &-image-area{
     
-                width:330px;
+                width:380px;
             }
         }
     }
@@ -127,6 +130,7 @@
 
         &__text{
             max-height: 200px;
+            line-height: 14px;
             
             @include font-size(.7rem);
         }
@@ -158,6 +162,7 @@
 
         &__text{
             max-height: 220px;
+            font-size: .8rem;
         }
     }
 }
@@ -183,6 +188,7 @@
 
         &__text{
             max-height: 220px;
+            font-size: .9rem;
         }
     }
 }

@@ -9,7 +9,7 @@
     bottom: 0;
     width: 1px;
     z-index: 0;
-    visibility: hidden;
+    visibility: visible;
 
 
 
@@ -20,6 +20,10 @@
     .header-mobile-nav{
         z-index: 1000;
         visibility: visible;
+    }
+
+    .button-menu-toggle{
+      display: block;
     }
 }
   .background-sidebar {
@@ -90,12 +94,12 @@
   }
   
   ul.sidebar-list {
-    padding: 25px 10px 25px 25px;
-    position: fixed;
-    top: 35px;
-    right: 3px;
+    padding: 15px 10px 25px 15px;
+    position: relative;
+
     width: 230px;
     z-index:1000
+    
 
   }
   
@@ -103,8 +107,8 @@
     list-style: none;
     margin-bottom: 20px;
     display: flex;
-    align-items: center;
-    justify-content: flex-end;
+    align-items: flex-start;
+    justify-content: flex-start;
     cursor: pointer;
   }
   
@@ -132,13 +136,26 @@
     cursor: pointer;
   }
   
+.sidebar-fixed-wrapper{
+  position: fixed;
+  top:70px;
+  left: 20px;
+  height: 100%;
 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-height: 100vh;
+
+  
+}
   .sidebar-contacts{
-    position:fixed;
-    bottom: 50px;
-    left: 10px;
+    position:relative;
+    padding: 1rem;
     width:250px;
     font-size: 1.2rem;
+    margin-bottom: 100px;
+    overflow-y: hidden;
     &__title{
       text-transform: uppercase;
       text-align: center;
@@ -148,6 +165,7 @@
     }
     &__links{
       display: flex;
+      margin-top: 20px;
       justify-content: space-around;
       align-items: center;
      &-icon{
@@ -159,7 +177,14 @@
 }
 
 @include media-breakpoint-between(sm,md){
-  .sidebar-contacts{
-    top:60%;
+
+}
+@include media-breakpoint-up(md){
+  html{
+    overflow-y: scroll !important;
+  }
+
+  .button-menu-toggle, .sidebar-contacts, .sidebar-list , .blur-mobile.open{
+    display: none !important;
   }
 }

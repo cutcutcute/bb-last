@@ -1,0 +1,17 @@
+
+
+.mobile-carousel{
+    @extend %carousel-wrapper-base;
+    margin-top:$page-header-mobile-height;
+    overflow: hidden;
+
+    &__wrapper{
+        aspect-ratio: 1/2;
+    }
+}
+
+@include media-breakpoint-up(md){
+    .mobile-carousel{
+        display: none;
+    }
+}

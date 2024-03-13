@@ -10,6 +10,7 @@
 @import "logo";
 @import "footer";
 @import "mobileSidebar";
+@import "carousel";
 
 
 @font-face {
@@ -25,6 +26,7 @@
     font-family: "Century Gothic";
     box-sizing: border-box;
     word-wrap: break-word;
+
 
 
 
@@ -65,16 +67,14 @@ h5{
 }
 
 .carouselWrapper{
-    position: relative;
-    width: 100%;
-    margin-bottom: 1%;
-    z-index:100;
+    @extend %carousel-wrapper-base;
  
 }
 
-@include media-breakpoint-between(sm,md){
+@include media-breakpoint-between(xs,md){
     .carouselWrapper{
         margin-top:$page-header-mobile-height;
+        display: none;
     }
 
 }

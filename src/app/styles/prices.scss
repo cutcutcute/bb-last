@@ -68,3 +68,8 @@
 
 
 
+@include media-breakpoint-between(xs,sm){
+    .price-block{
+        margin-bottom: 70px;
+    }
+}

@@ -27,7 +27,6 @@
     justify-content: flex-start;
     align-items: center;
     margin-top: 15px;
-    margin-bottom: 270px;
     min-width: 332px;
     background: linear-gradient(180deg, rgba(203,196,186,1) 50%, rgba(203,196,186,.8) 70%);
     gap:15px;
@@ -60,6 +59,8 @@
     border: none;
     border-radius: 15px;
     box-shadow: 0 0 2px #000;
+    padding: 1px 6px;
+    min-width: 180px;
     text-transform: uppercase;
     transition: all .4s ease-out;
     background-color: rgba(0, 0, 0, .75);

@@ -16,3 +16,11 @@ html{
 %transition-timing{
     transition: all .3s ease-out;
 }
+
+
+%carousel-wrapper-base{
+    position: relative;
+    width: 100%;
+    margin-bottom: 1%;
+    z-index:100;
+}

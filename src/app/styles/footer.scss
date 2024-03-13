@@ -3,6 +3,37 @@
 
 .footer-element{
     position: relative;
-    height: 400px;
-    background: linear-gradient(180deg, rgba(203,196,186,1) 50%, rgba(203,196,186,.8) 70%);
+    padding: 30px 20px 30px 30px;
+
+    &__logo-wrapper{
+        @extend %pos-rel;
+        width: 80px;
+    }
+  
+}
+
+.footer-links{
+    position: relative;
+
+
+    &__icons{
+        position: relative;
+        width: 180px !important;
+    }
+
+}
+
+.footer-title{
+    @include font-size(1.25rem)
+}
+
+@include media-breakpoint-between(xs,md){
+    .footer-main-row{
+        flex-direction: column;
+        gap:30px;
+    }
+
+    .footer-title-contacts{
+
+    }
 }

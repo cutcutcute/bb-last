@@ -1,14 +1,15 @@
 import React, { useRef, useLayoutEffect } from "react";
 import { LogoWidget } from "./logoWidget";
-import { TitleImagesBlock } from "./titleImagesBlock";
-import { Header } from "./header";
+import { TitleImagesBlock } from "./carousel/titleImagesBlock";
+import { Header } from "./bars/header";
 import { InfoBlock } from "./infoBlock";
 import { Portfolio } from "./portfolio";
 import { PriceBlock } from "./prices";
 import { Parallax, useParallax } from "react-scroll-parallax";
 import { CallbackForm } from "./callbackForm";
-import { Footer } from "./footer";
+import { Footer } from "./bars/footer";
 import { MainLoading } from "./loading/mainLoading";
+import { MobileCarousel } from "./carousel/MobileCarousel";
 
 const HomeStart = (): React.JSX.Element =>{
 
@@ -20,6 +21,7 @@ const HomeStart = (): React.JSX.Element =>{
     <Header/>
 
     <TitleImagesBlock/>
+    <MobileCarousel/>
     <InfoBlock/>
     <Portfolio/>
     <PriceBlock/>
