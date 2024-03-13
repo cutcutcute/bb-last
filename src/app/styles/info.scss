@@ -13,9 +13,10 @@
 
     &__wrapper{
         @extend %pos-rel;
-        padding: 20px;
         justify-content: center;
         align-items: center;
+        padding-left: 1rem;
+        padding-right: 1rem;
         min-height: 333px;
         
 
@@ -72,7 +73,8 @@
         padding: 0;
         margin-bottom: 110px;
     &__wrapper{
-
+        padding-left: 0;
+        padding-right: 0;
         &-image-area{
             width:380px;
         }

@@ -4,6 +4,7 @@ import { MainLoading } from './widgets/loading/mainLoading';
 import "./app/styles/styles.scss";
 
 import { Home } from './pages/home';
+import { Portfolio } from './pages/portfolio';
 
 
 
@@ -12,11 +13,8 @@ function App(): React.JSX.Element {
 
     <HashRouter>
       <Routes>
-          <Route path='/'  element={
-
-                              <Home />
-
-                          }/>
+          <Route path='/'  element={ <Home />}/>
+          <Route path='/portfolio' element={<Portfolio/>}/>
       </Routes>
     </HashRouter>
 

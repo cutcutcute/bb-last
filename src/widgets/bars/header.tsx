@@ -5,35 +5,21 @@ import { useDimensions } from "../../features/hooks/useDimensions";
 import { Navigation } from "./Navigation";
 import { MenuToggle } from "../../shared/buttons/MenuToggle";
 import { SideBarContacts } from "../../shared/SideBarContacts";
+import { SideBarVariants } from "../../shared/animations/SidebarVariants";
 
-const sidebar = {
-    open: (height = 2000) => ({
-      clipPath: `circle(${height * 1 + 200}px at 40px 40px)`,
-      transition: {
-        type: "spring",
-        stiffness: 20,
-        restDelta: 2
-      }
-    }),
-    closed: {
-      clipPath: "circle(30px at 40px 40px)",
-      transition: {
-        
-        type: "spring",
-        stiffness: 400,
-        damping: 40,
-
-      }
-    }
-  };
-
+interface HeaderProps{
+  color?: string,
+  backgroundColor?: string
+}
   
 
-export const Header = (): React.JSX.Element => {
+export const Header = (props: HeaderProps): React.JSX.Element => {
 
     const [isOpen, toggleOpen] = useCycle(false, true);
     const containerRef = useRef(null);
     const { height } = useDimensions(containerRef);
+
+
    
     const disableScroll = () => {
       document.getElementsByTagName("html")[0].style.overflowY = "hidden";
@@ -48,16 +34,17 @@ export const Header = (): React.JSX.Element => {
       isOpen?disableScroll():enableScroll();
     })
 
+
     return <> 
-    <motion.header  initial={{opacity:0, y:-90}} animate={{opacity:1, y:0}} transition={{duration:.8}} className="page-header px-2">
+    <motion.header style={{color:props.color, backgroundColor:props.backgroundColor}}  initial={{opacity:0, y:-90}} animate={{opacity:1, y:0}} transition={{duration:.8}} className="page-header px-2">
         <nav className="navigation w-100" >
             <div className="container navigation-container w-100">
                 <div className="row align-items-end">
-                    <div className="col"><NavigationItem textValue="Портфолио" textSizeLevel={1}/></div>
-                    <div className="col"><NavigationItem textValue="Услуги" textSizeLevel={2}/></div>
-                    <div className="col"><NavigationItem isLogo={true}/></div>
-                    <div className="col"><NavigationItem textValue="О нас" textSizeLevel={2}/></div>
-                    <div className="col"><NavigationItem textValue="Контакты" textSizeLevel={1}/></div>
+                    <div className="col"><NavigationItem color={props.color} textValue="Портфолио" navigatePath="/portfolio" textSizeLevel={1}/></div>
+                    <div className="col"><NavigationItem color={props.color} textValue="Услуги" textSizeLevel={2}/></div>
+                    <div className="col"><NavigationItem color={props.color} isLogo={true}/></div>
+                    <div className="col"><NavigationItem color={props.color} textValue="О нас" textSizeLevel={2}/></div>
+                    <div className="col"><NavigationItem color={props.color} textValue="Контакты" textSizeLevel={1}/></div>
                 </div>
             </div>
         </nav>
@@ -76,7 +63,7 @@ export const Header = (): React.JSX.Element => {
             ref={containerRef}
             
         >
-        <motion.div className="background-sidebar" variants={sidebar} />
+        <motion.div className="background-sidebar" variants={SideBarVariants} />
         <MenuToggle toggle={() => toggleOpen()} />
           <div className="sidebar-fixed-wrapper">
             <Navigation display={isOpen}/>
