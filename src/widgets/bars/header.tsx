@@ -9,7 +9,8 @@ import { SideBarVariants } from "../../shared/animations/SidebarVariants";
 
 interface HeaderProps{
   color?: string,
-  backgroundColor?: string
+  backgroundColor?: string,
+  isRelative?:boolean
 }
   
 
@@ -34,20 +35,23 @@ export const Header = (props: HeaderProps): React.JSX.Element => {
       isOpen?disableScroll():enableScroll();
     })
 
+    const lineColor = props.color==="#000"?"#000":"#fff";
+  
 
     return <> 
-    <motion.header style={{color:props.color, backgroundColor:props.backgroundColor}}  initial={{opacity:0, y:-90}} animate={{opacity:1, y:0}} transition={{duration:.8}} className="page-header px-2">
+    <motion.header style={{color:props.color, position: props.isRelative?"relative":"absolute", backgroundColor:props.backgroundColor}}  initial={{opacity:0, y:-90}} animate={{opacity:1, y:0}} transition={{duration:.8}} className="page-header px-2">
         <nav className="navigation w-100" >
             <div className="container navigation-container w-100">
                 <div className="row align-items-end">
                     <div className="col"><NavigationItem color={props.color} textValue="Портфолио" navigatePath="/portfolio" textSizeLevel={1}/></div>
                     <div className="col"><NavigationItem color={props.color} textValue="Услуги" textSizeLevel={2}/></div>
-                    <div className="col"><NavigationItem color={props.color} isLogo={true}/></div>
+                    <div className="col"><NavigationItem color={props.color} isLogo={true} navigatePath="/"/></div>
                     <div className="col"><NavigationItem color={props.color} textValue="О нас" textSizeLevel={2}/></div>
                     <div className="col"><NavigationItem color={props.color} textValue="Контакты" textSizeLevel={1}/></div>
                 </div>
             </div>
         </nav>
+        <motion.div initial={{scaleX:0, opacity:0}} whileInView={{scaleX:1, opacity:1}} transition={{duration:.7, delay:.5}} style={{borderTop:`1px solid ${lineColor}`}} className="header-line"></motion.div>
     </motion.header>
     <motion.div className={`${isOpen?"open":"close"} blur-mobile`} initial={false}
             animate={isOpen ? "open" : "closed"}

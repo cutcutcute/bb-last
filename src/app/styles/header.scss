@@ -1,5 +1,5 @@
 %medium-size-text{
-    @include font-size(1.35rem);
+    @include font-size(1.5rem);
 }
 
 %low-size-text{
@@ -46,12 +46,23 @@ $page-header-desktop-height:120px;
 
 .page-header{
     @extend %pos-abs;
-    @extend %flex-row;
+    display: flex;
+    flex-direction: column;
     justify-content: flex-end;
     align-items: center;
     width: 100%;
+    top:0;
+    left:0;
     height: $page-header-desktop-height;
+    min-width: 332px;
     z-index: 300;
+
+}
+
+.header-line{
+    position: relative;
+    width: 60%;
+    border-top: 1px solid #fff;
 }
 
 .navigation{
@@ -64,6 +75,7 @@ $page-header-desktop-height:120px;
     }
 
     &__item{
+        cursor: pointer;
         &-text{
             @extend %transition-timing;
             cursor: pointer;
@@ -78,7 +90,12 @@ $page-header-desktop-height:120px;
             @include load-background-image("../../shared/logo/logo.svg",100% ,70px);
             min-width:160px;
 
-            &-dark{}
+            &-dark{
+                @extend %pos-rel;
+                @include load-background-image("../../shared/logo/logo-dark.svg",100% ,70px);
+                min-width:160px;
+
+            }
 
 
         }
@@ -109,6 +126,9 @@ $page-header-desktop-height:120px;
         display: none;
     }
 
+    .header-line{
+        display: none;
+    }
     .mobile-menu-button{
         display: block;
         aspect-ratio: 1/1;

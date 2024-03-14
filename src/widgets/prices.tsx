@@ -33,7 +33,7 @@ export const PriceBlock = (): React.JSX.Element =>{
             <div className="row">
 
               {PriceList.map((item)=>(
-                <motion.div key={Number.parseInt(item.id)} onClick={()=>setSelectedId(item.id)} layoutId={item.id} initial={{opacity:.5}} whileInView={{opacity:1}} transition={{duration:.7, ease:"easeOut"}} whileHover={{y:-10}} className="col m-3"> 
+                <motion.div key={Number.parseInt(item.id)} onClick={()=>setSelectedId(item.id)} layoutId={item.id} initial={{opacity:.5}} whileInView={{opacity:1}} transition={{duration:.7, ease:"easeOut"}} whileHover={{y:-10}} className="col price-col m-3"> 
                   <PriceCard text={item.text} price={item.price} handleSelect={()=>selectCard(item.id)}/>
                 </motion.div>
 

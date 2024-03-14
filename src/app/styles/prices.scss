@@ -60,10 +60,10 @@
     border-radius: 50%;
     color: black !important;
     transition: all .3s ease-out;
-    background-color: rgba(203,196,186,1);
+    background: linear-gradient(180deg, rgba(203,196,186,.7) 50%, rgba(203,196,186,.65) 70%);
 
     &:hover{
-        background-color: rgba(203,196,186,.5);
+        background: linear-gradient(180deg, rgba(203,196,186,.7) 50%, rgba(203,196,186,.65) 70%);
 
     }
 }
@@ -73,5 +73,11 @@
 @include media-breakpoint-between(xs,sm){
     .price-block{
         margin-bottom: 70px;
+        padding: 15px 0 15px 0;
+    }
+
+    .price-col{
+        padding-left: 0 !important;
+        padding-right: 0  !important;
     }
 }

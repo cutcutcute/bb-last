@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/bb-last/static/css/main.87e4d980.css",
-    "main.js": "/bb-last/static/js/main.6831509c.js",
-    "static/js/573.c1a264b8.chunk.js": "/bb-last/static/js/573.c1a264b8.chunk.js",
+    "main.css": "/bb-last/static/css/main.b77626f0.css",
+    "main.js": "/bb-last/static/js/main.e3196b51.js",
+    "static/js/44.4e80e68d.chunk.js": "/bb-last/static/js/44.4e80e68d.chunk.js",
     "static/js/558.e09b00b8.chunk.js": "/bb-last/static/js/558.e09b00b8.chunk.js",
     "static/media/mcr1.jpg": "/bb-last/static/media/mcr1.a7c352b8e0879aa89912.jpg",
     "static/media/mcr2.jpg": "/bb-last/static/media/mcr2.97238a6b5c5fe1f4a4e2.jpg",
@@ -17,6 +17,7 @@
     "static/media/centurygothic.ttf": "/bb-last/static/media/centurygothic.b194aa2bd524e2c973f7.ttf",
     "static/media/info.jpeg": "/bb-last/static/media/info.2311e7e97b77be0fa94b.jpeg",
     "static/media/logo.svg": "/bb-last/static/media/logo.16bf8b44d650374c8f79.svg",
+    "static/media/logo-dark.svg": "/bb-last/static/media/logo-dark.fdba0524aaa195e10d56.svg",
     "static/media/smallLogo.svg": "/bb-last/static/media/smallLogo.127d2ec69219ba7e3677a1f8b015832d.svg",
     "static/media/square.svg": "/bb-last/static/media/square.0ebe7c7385c7726a1a74.svg",
     "static/media/instagram.svg": "/bb-last/static/media/instagram.07a3eab8cb96d363fc4db37b52ef01e5.svg",
@@ -27,13 +28,13 @@
     "static/media/user.svg": "/bb-last/static/media/user.6c3be22464a0023cca5d.svg",
     "index.html": "/bb-last/index.html",
     "static/media/close.svg": "/bb-last/static/media/close.cbc1cf0ff039e384605bfb6c45c7639e.svg",
-    "main.87e4d980.css.map": "/bb-last/static/css/main.87e4d980.css.map",
-    "main.6831509c.js.map": "/bb-last/static/js/main.6831509c.js.map",
-    "573.c1a264b8.chunk.js.map": "/bb-last/static/js/573.c1a264b8.chunk.js.map",
+    "main.b77626f0.css.map": "/bb-last/static/css/main.b77626f0.css.map",
+    "main.e3196b51.js.map": "/bb-last/static/js/main.e3196b51.js.map",
+    "44.4e80e68d.chunk.js.map": "/bb-last/static/js/44.4e80e68d.chunk.js.map",
     "558.e09b00b8.chunk.js.map": "/bb-last/static/js/558.e09b00b8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.87e4d980.css",
-    "static/js/main.6831509c.js"
+    "static/css/main.b77626f0.css",
+    "static/js/main.e3196b51.js"
   ]
 }

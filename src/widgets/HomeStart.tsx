@@ -2,7 +2,7 @@ import React, { useRef, useLayoutEffect } from "react";
 import { LogoWidget } from "./logoWidget";
 import { TitleImagesBlock } from "./carousel/titleImagesBlock";
 import { Header } from "./bars/header";
-import { InfoBlock } from "./infoBlock";
+import { InfoBlock } from "./info/infoBlock";
 import { Portfolio } from "./portfolio";
 import { PriceBlock } from "./prices";
 import { Parallax, useParallax } from "react-scroll-parallax";
@@ -18,6 +18,7 @@ const HomeStart = (): React.JSX.Element =>{
   
     return <>
     
+
     <Header/>
 
     <TitleImagesBlock/>
@@ -32,3 +33,15 @@ const HomeStart = (): React.JSX.Element =>{
 }
 
 export default HomeStart;
+
+/**
+ * <Header/>
+
+    <TitleImagesBlock/>
+    <MobileCarousel/>
+    <InfoBlock/>
+    <Portfolio/>
+    <PriceBlock/>
+    <CallbackForm/>
+    <Footer/>
+ */
