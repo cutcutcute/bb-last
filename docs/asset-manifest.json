@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/bb-last/static/css/main.03f865e5.css",
-    "main.js": "/bb-last/static/js/main.c859a3c6.js",
+    "main.css": "/bb-last/static/css/main.f7585565.css",
+    "main.js": "/bb-last/static/js/main.e08b2f50.js",
     "static/js/44.22698331.chunk.js": "/bb-last/static/js/44.22698331.chunk.js",
     "static/js/558.e09b00b8.chunk.js": "/bb-last/static/js/558.e09b00b8.chunk.js",
     "static/media/mcr1.jpg": "/bb-last/static/media/mcr1.a7c352b8e0879aa89912.jpg",
@@ -28,13 +28,13 @@
     "static/media/user.svg": "/bb-last/static/media/user.6c3be22464a0023cca5d.svg",
     "index.html": "/bb-last/index.html",
     "static/media/close.svg": "/bb-last/static/media/close.cbc1cf0ff039e384605bfb6c45c7639e.svg",
-    "main.03f865e5.css.map": "/bb-last/static/css/main.03f865e5.css.map",
-    "main.c859a3c6.js.map": "/bb-last/static/js/main.c859a3c6.js.map",
+    "main.f7585565.css.map": "/bb-last/static/css/main.f7585565.css.map",
+    "main.e08b2f50.js.map": "/bb-last/static/js/main.e08b2f50.js.map",
     "44.22698331.chunk.js.map": "/bb-last/static/js/44.22698331.chunk.js.map",
     "558.e09b00b8.chunk.js.map": "/bb-last/static/js/558.e09b00b8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.03f865e5.css",
-    "static/js/main.c859a3c6.js"
+    "static/css/main.f7585565.css",
+    "static/js/main.e08b2f50.js"
   ]
 }

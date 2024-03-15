@@ -14,10 +14,10 @@ export const PageNotFound = (): React.JSX.Element => {
                     <div className="row mb-3">
                         <div className="col not-found-area__wrapper-title text-center">Страница не найдена</div>
                     </div>
-                    <div className="row mb-3">
+                    <div className="row" style={{marginBottom:"4rem"}}>
                         <div className="col not-found-area__wrapper-text text-center">Страницы по указанному адрессу не существует. Вернуться на главную страницу?</div>
                     </div>
-                    <div className="row mb-3">
+                    <div className="row">
                         <div className="col text-center">
                             <button onClick={()=> navigate("/", {replace:true})} className="not-found-area__wrapper-button">Вернуться на главную</button>
                         </div>

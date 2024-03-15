@@ -29,3 +29,13 @@
         }
     }
 }
+
+@include media-breakpoint-between(xs,sm){
+    .not-found-area{
+        &__wrapper{
+            &-text{
+                @include font-size(.9rem);
+            }
+        }
+    }
+}
