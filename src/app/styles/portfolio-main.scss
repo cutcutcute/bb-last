@@ -27,7 +27,7 @@
     height: 100%;
     background-color: rgba(0,0,0,.2);
     cursor: pointer;
-    z-index:400;
+    z-index:300;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -54,6 +54,10 @@
 
 
 @include media-breakpoint-between(xs, sm){
+
+    .portfolio-main-section{
+        margin-top: $page-header-mobile-height;
+    }
     .portfolio-photo-title{
         @include font-size(1.2rem);
     }
@@ -63,6 +67,11 @@
     }
 }
 @include media-breakpoint-between(sm,md){
+
+    .portfolio-main-section{
+        margin-top: $page-header-mobile-height;
+    }
+
     .portfolio-photo-title{
         @include font-size(1.5rem);
     }

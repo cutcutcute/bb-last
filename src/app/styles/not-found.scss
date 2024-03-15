@@ -1,0 +1,31 @@
+
+
+.not-found-area{
+    @extend %pos-rel;
+    width:100%;
+    height: 100vh;
+    
+    &__wrapper{
+        &-title{
+            @include font-size(1.5rem);
+       
+        }
+
+        &-text{
+            @include font-size(1.2rem)
+        }
+
+        &-button{
+            @include font-size(1.2rem);
+            border: none;
+            border-radius: 15px;
+            padding: 3px 12px;
+            color:#fff;
+            background-color: rgba(0,0,0,.8);
+            transition: all .3s ease-out;
+            &:hover{
+                background-color: rgba(0,0,0,.6);
+            }
+        }
+    }
+}

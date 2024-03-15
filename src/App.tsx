@@ -5,6 +5,7 @@ import "./app/styles/styles.scss";
 
 import { Home } from './pages/home';
 import { Portfolio } from './pages/portfolio';
+import { PageNotFound } from './pages/NotFound';
 
 
 
@@ -15,6 +16,7 @@ function App(): React.JSX.Element {
       <Routes>
           <Route path='/'  element={ <Home />}/>
           <Route path='/portfolio' element={<Portfolio/>}/>
+          <Route path="*" element={<PageNotFound/>}/>
       </Routes>
     </HashRouter>
 

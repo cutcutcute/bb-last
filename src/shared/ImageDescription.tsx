@@ -8,7 +8,7 @@ interface ImageDescriptionProps{
 
 export const ImageDescription = (props: ImageDescriptionProps): React.JSX.Element => {
 
-    return <div className="image-description-area">
+    return <motion.div initial={{backgroundColor:"rgba(0,0,0,.2)"}} transition={{duration:.4, ease:"easeInOut"}} whileHover={{backgroundColor:"rgba(0,0,0,.4)"}} className="image-description-area">
         <div className="image-description-area__content">
             <div className="container">
                 <div className="row">
@@ -19,5 +19,5 @@ export const ImageDescription = (props: ImageDescriptionProps): React.JSX.Elemen
                 </div>
             </div>
         </div>
-    </div>
+    </motion.div>
 }

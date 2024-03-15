@@ -1,5 +1,6 @@
 import * as React from "react";
 import { motion } from "framer-motion";
+import { Navigate, useNavigate } from "react-router-dom";
 
 const variants = {
   open: {
@@ -27,14 +28,17 @@ type Props = {
 }
 
 export const MenuItem = (props: Props) => {
+
+  const navigate = useNavigate();
   return (
     <motion.li className="sidebar-element"
       variants={variants}
       whileHover={{ textShadow:"0 0 2px rgba(0,0,0,.4)" }}
       whileTap={{ scale: 0.95 }}
+
     >
 
-      <div className="text-placeholder" >{props.text}</div>
+      <nav className="text-placeholder" onClick={()=> navigate(props.link)}>{props.text}</nav>
     </motion.li>
   );
 };

@@ -44,10 +44,10 @@ export const Header = (props: HeaderProps): React.JSX.Element => {
             <div className="container navigation-container w-100">
                 <div className="row align-items-end">
                     <div className="col"><NavigationItem color={props.color} textValue="Портфолио" navigatePath="/portfolio" textSizeLevel={1}/></div>
-                    <div className="col"><NavigationItem color={props.color} textValue="Услуги" textSizeLevel={2}/></div>
+                    <div className="col"><NavigationItem color={props.color} textValue="Услуги" navigatePath="/price" textSizeLevel={2}/></div>
                     <div className="col"><NavigationItem color={props.color} isLogo={true} navigatePath="/"/></div>
-                    <div className="col"><NavigationItem color={props.color} textValue="О нас" textSizeLevel={2}/></div>
-                    <div className="col"><NavigationItem color={props.color} textValue="Контакты" textSizeLevel={1}/></div>
+                    <div className="col"><NavigationItem color={props.color} textValue="О нас" navigatePath="/about" textSizeLevel={2}/></div>
+                    <div className="col"><NavigationItem color={props.color} textValue="Контакты" navigatePath="/contacts" textSizeLevel={1}/></div>
                 </div>
             </div>
         </nav>
