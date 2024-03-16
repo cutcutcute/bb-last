@@ -6,6 +6,7 @@ interface NavigationProps{
     isLogo?:boolean,
     textSizeLevel?: number,
     navigatePath?: string,
+    handleScroll?: ()=>void,
     color?: string
 
 }
@@ -17,6 +18,7 @@ export const NavigationItem = (props: NavigationProps): React.JSX.Element =>{
     const navigate = useNavigate()
 
     const handleNavigate = ()=> {props.navigatePath?navigate(props.navigatePath):console.log(props.navigatePath)}
+
 
     return <nav onClick={handleNavigate} className="navigation__item text-center">
          {props.isLogo===false||props.isLogo===undefined&&<p style={{color:props.color}} className={`${classText} navigation__item-text`}>{props.textValue}</p>}

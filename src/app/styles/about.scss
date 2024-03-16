@@ -1,0 +1,50 @@
+
+@function calc-margin-from-header($header-height, $px){
+    @return $header-height + $px;
+}
+
+
+.about-layout{
+    position:relative;
+    width:100%;
+    margin-top: calc-margin-from-header($page-header-desktop-height, 18px);
+
+    &__image-row{
+        margin-bottom: 60px;
+    }
+
+    &__text-fragment{
+        margin-bottom: 40px;
+    }
+
+    &__underline{
+
+    }
+    
+}
+
+.info-chapter{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__text{
+        @include font-size(1.2rem);
+    }
+}
+
+@include media-breakpoint-between(xs, md){
+    .about-layout{
+        margin-top: calc-margin-from-header($page-header-mobile-height, 8px);
+    }
+}
+
+@include media-breakpoint-between(xs,sm){
+    .info-chapter{
+
+    
+        &__text{
+            @include font-size(.9rem);
+        }
+    }
+}

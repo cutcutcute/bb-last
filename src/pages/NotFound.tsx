@@ -15,7 +15,7 @@ export const PageNotFound = (): React.JSX.Element => {
                         <div className="col not-found-area__wrapper-title text-center">Страница не найдена</div>
                     </div>
                     <div className="row" style={{marginBottom:"4rem"}}>
-                        <div className="col not-found-area__wrapper-text text-center">Страницы по указанному адрессу не существует. Вернуться на главную страницу?</div>
+                        <div className="col not-found-area__wrapper-text text-center">Страницы по указанному адресу не существует. Вернуться на главную страницу?</div>
                     </div>
                     <div className="row">
                         <div className="col text-center">

@@ -3,12 +3,17 @@ import { AnimateTitleText } from "../../features/textAnimation";
 import { ContactIcons } from "../../shared/ContactIcons";
 import SmallLogoSvg from "../../shared/logo/smallLogo.svg";
 
-export const Footer = (): React.JSX.Element => {
+
+interface FooterProps{
+    isReverse?: boolean;
+}
+
+export const Footer = (props: FooterProps): React.JSX.Element => {
     return <section className="footer-element d-flex justify-content-center">
         <div className="container">
-            <div className="row footer-main-row">
+            <div className={`row footer-main-row ${props.isReverse?"mobile-reverse":""}`} >
             
-                <div className="col =">
+                <div className="col">
                     <div className="row justify-content-center footer-title"><strong className="text-center">
                     <AnimateTitleText staggerChildren={.042} wordWrapper={false} text="Социальные сети:" once={false}  delay={.5}/> </strong></div>
                     <div className="row footer-links justify-content-center">

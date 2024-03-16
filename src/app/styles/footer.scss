@@ -3,6 +3,7 @@
 
 .footer-element{
     position: relative;
+    margin-top: 30px;
     padding: 30px 20px 30px 30px;
 
     &__logo-wrapper{
@@ -31,6 +32,10 @@
     .footer-main-row{
         flex-direction: column;
         gap:30px;
+    }
+
+    .mobile-reverse{
+        flex-direction: column-reverse !important; 
     }
 
     .footer-title-contacts{

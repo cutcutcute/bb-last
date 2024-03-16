@@ -1,5 +1,5 @@
 import React from "react";
-import { ImageWrapper } from "./ImageWrapper";
+import  {ImageWrapper}  from "./ImageWrapper";
 import { motion } from "framer-motion";
 
 import YandexImage from "../app/images/contacts/mail.svg";
