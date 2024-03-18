@@ -9,7 +9,7 @@
  */
 export const scrollToElement = (elementId: string) => {
     const element: HTMLElement|null = document.getElementById(elementId);
-    const offset: number = element?element.offsetTop:0; // отступ от начала страницы
+    const offset: number = element?element.offsetTop - 60:0; // отступ от начала страницы
 
     window.scrollTo({
         top: offset,
