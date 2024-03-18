@@ -8,7 +8,7 @@ import { useParallax } from "react-scroll-parallax";
 export const Portfolio = (): React.JSX.Element => {
 
 
-    return <motion.section initial={{opacity:.3}} whileInView={{opacity:1}} transition={{duration:.7}}  className="portfolio-block d-flex">
+    return <motion.section initial={{opacity:.3}} whileInView={{opacity:1}} transition={{duration:.7}}  className="portfolio-block d-flex" id="portfolio-block-id">
         <div className="living-spaces-block d-flex ">
             <motion.div initial={{opacity:0}} whileInView={{opacity:1}} whileTap={{scale:1.3}} transition={{duration:.9}} className="living-spaces-block__title ">
                 <h3 className="title-text living-s-text text-start ">Жилые пространства</h3></motion.div>

@@ -24,12 +24,37 @@ const variants = {
 type Props = {
     i: number,
     text: string,
-    link: string
+    link: string,
+    handleScroll?:()=>void,
+    toggleClick:()=>void
 }
 
 export const MenuItem = (props: Props) => {
 
   const navigate = useNavigate();
+
+  const navigation = async(): Promise<boolean|null> =>{
+    await navigate(props.link??"/");
+    props.toggleClick();
+    return true;
+}
+
+
+
+const handleNavigate = async ()=> {
+    /**
+         * Выполнится в том случае если передан 
+         * параметр handleScroll как колбек для скроллинга 
+         * до конкретного элемента
+         */
+    
+    console.log(props.handleScroll)
+    navigation()
+        .then(()=>{props.handleScroll?props.handleScroll():console.log("net");}) 
+        .catch(()=>{alert("error")})   // Нужно будет убрать алерт!!!    
+
+   
+}
   return (
     <motion.li className="sidebar-element"
       variants={variants}
@@ -38,7 +63,7 @@ export const MenuItem = (props: Props) => {
 
     >
 
-      <nav className="text-placeholder" onClick={()=> navigate(props.link)}>{props.text}</nav>
+      <nav className="text-placeholder" onClick={handleNavigate}>{props.text}</nav>
     </motion.li>
   );
 };

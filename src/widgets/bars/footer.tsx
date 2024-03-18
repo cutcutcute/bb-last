@@ -9,7 +9,7 @@ interface FooterProps{
 }
 
 export const Footer = (props: FooterProps): React.JSX.Element => {
-    return <section className="footer-element d-flex justify-content-center">
+    return <section className="footer-element d-flex justify-content-center" id="footer-element-id">
         <div className="container">
             <div className={`row footer-main-row ${props.isReverse?"mobile-reverse":""}`} >
             

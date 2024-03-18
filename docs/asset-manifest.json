@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.css": "/bb-last/static/css/main.4e433f69.css",
-    "main.js": "/bb-last/static/js/main.887374a2.js",
-    "static/js/987.4398e254.chunk.js": "/bb-last/static/js/987.4398e254.chunk.js",
-    "static/js/668.b6589e5a.chunk.js": "/bb-last/static/js/668.b6589e5a.chunk.js",
-    "static/js/18.18430aad.chunk.js": "/bb-last/static/js/18.18430aad.chunk.js",
-    "static/js/558.473a48f4.chunk.js": "/bb-last/static/js/558.473a48f4.chunk.js",
+    "main.css": "/bb-last/static/css/main.0bdc1e25.css",
+    "main.js": "/bb-last/static/js/main.6c5f8abf.js",
+    "static/js/987.b6c7e158.chunk.js": "/bb-last/static/js/987.b6c7e158.chunk.js",
+    "static/js/876.49bf8e2a.chunk.js": "/bb-last/static/js/876.49bf8e2a.chunk.js",
+    "static/js/558.e09b00b8.chunk.js": "/bb-last/static/js/558.e09b00b8.chunk.js",
+    "static/js/81.2f23a2ee.chunk.js": "/bb-last/static/js/81.2f23a2ee.chunk.js",
     "static/media/mcr1.jpg": "/bb-last/static/media/mcr1.a7c352b8e0879aa89912.jpg",
     "static/media/mcr2.jpg": "/bb-last/static/media/mcr2.97238a6b5c5fe1f4a4e2.jpg",
     "static/media/mcr3.jpg": "/bb-last/static/media/mcr3.ce1e84c42d2674a4ebe0.jpg",
@@ -18,8 +18,8 @@
     "static/media/cr4.jpg": "/bb-last/static/media/cr4.29313ce2cec062eda465.jpg",
     "static/media/centurygothic.ttf": "/bb-last/static/media/centurygothic.b194aa2bd524e2c973f7.ttf",
     "static/media/info.jpeg": "/bb-last/static/media/info.2311e7e97b77be0fa94b.jpeg",
-    "static/media/logo.svg": "/bb-last/static/media/logo.61d45789fcd72b65b397.svg",
-    "static/media/logo-dark.svg": "/bb-last/static/media/logo-dark.8e0fb1436b9282acbbc2.svg",
+    "static/media/logo.svg": "/bb-last/static/media/logo.16bf8b44d650374c8f79.svg",
+    "static/media/logo-dark.svg": "/bb-last/static/media/logo-dark.fdba0524aaa195e10d56.svg",
     "static/media/smallLogo.svg": "/bb-last/static/media/smallLogo.127d2ec69219ba7e3677a1f8b015832d.svg",
     "static/media/square.svg": "/bb-last/static/media/square.0ebe7c7385c7726a1a74.svg",
     "static/media/instagram.svg": "/bb-last/static/media/instagram.07a3eab8cb96d363fc4db37b52ef01e5.svg",
@@ -30,15 +30,15 @@
     "static/media/user.svg": "/bb-last/static/media/user.6c3be22464a0023cca5d.svg",
     "index.html": "/bb-last/index.html",
     "static/media/close.svg": "/bb-last/static/media/close.cbc1cf0ff039e384605bfb6c45c7639e.svg",
-    "main.4e433f69.css.map": "/bb-last/static/css/main.4e433f69.css.map",
-    "main.887374a2.js.map": "/bb-last/static/js/main.887374a2.js.map",
-    "987.4398e254.chunk.js.map": "/bb-last/static/js/987.4398e254.chunk.js.map",
-    "668.b6589e5a.chunk.js.map": "/bb-last/static/js/668.b6589e5a.chunk.js.map",
-    "18.18430aad.chunk.js.map": "/bb-last/static/js/18.18430aad.chunk.js.map",
-    "558.473a48f4.chunk.js.map": "/bb-last/static/js/558.473a48f4.chunk.js.map"
+    "main.0bdc1e25.css.map": "/bb-last/static/css/main.0bdc1e25.css.map",
+    "main.6c5f8abf.js.map": "/bb-last/static/js/main.6c5f8abf.js.map",
+    "987.b6c7e158.chunk.js.map": "/bb-last/static/js/987.b6c7e158.chunk.js.map",
+    "876.49bf8e2a.chunk.js.map": "/bb-last/static/js/876.49bf8e2a.chunk.js.map",
+    "558.e09b00b8.chunk.js.map": "/bb-last/static/js/558.e09b00b8.chunk.js.map",
+    "81.2f23a2ee.chunk.js.map": "/bb-last/static/js/81.2f23a2ee.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4e433f69.css",
-    "static/js/main.887374a2.js"
+    "static/css/main.0bdc1e25.css",
+    "static/js/main.6c5f8abf.js"
   ]
 }
