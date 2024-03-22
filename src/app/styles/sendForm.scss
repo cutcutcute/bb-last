@@ -1,0 +1,50 @@
+
+
+
+.feature-form{
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0,0,0,.8);
+    z-index: 1000;
+
+    &__window{
+        @extend %pos-rel;
+        width: 30%;
+        padding: 20px;
+        height: auto;
+        border-radius: 15px;
+        background-color: rgba(255,255,255,1);
+        margin: 0 15px 0 15px !important;
+        z-index: 1001;
+        transition: all .2s ease-in-out;
+
+        &-title{
+            background: linear-gradient(180deg, rgba(203,196,186,.5) 50%, rgba(203,196,186,.45) 70%);
+            line-height: 52px;
+            border-radius: 15px 15px 0 0;
+            color: rgba(0,0,0,.8);
+        }
+
+        &-text{
+            line-height: 32px;
+            @include font-size(1.3rem);
+        }
+    }
+    
+}
+
+@include media-breakpoint-between(xs, md){
+    .feature-form{
+
+    
+        &__window{
+           
+    
+            &-text{
+                line-height: 17px;
+                @include font-size(.9rem);
+            }
+        }
+        
+    }
+}

@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.css": "/bb-last/static/css/main.0bdc1e25.css",
-    "main.js": "/bb-last/static/js/main.e16f706f.js",
-    "static/js/987.b6c7e158.chunk.js": "/bb-last/static/js/987.b6c7e158.chunk.js",
-    "static/js/876.49bf8e2a.chunk.js": "/bb-last/static/js/876.49bf8e2a.chunk.js",
-    "static/js/558.e09b00b8.chunk.js": "/bb-last/static/js/558.e09b00b8.chunk.js",
-    "static/js/81.2f23a2ee.chunk.js": "/bb-last/static/js/81.2f23a2ee.chunk.js",
+    "main.css": "/bb-last/static/css/main.40924ee5.css",
+    "main.js": "/bb-last/static/js/main.a5fa5076.js",
+    "static/js/987.5e7b5151.chunk.js": "/bb-last/static/js/987.5e7b5151.chunk.js",
+    "static/js/101.35e4d354.chunk.js": "/bb-last/static/js/101.35e4d354.chunk.js",
+    "static/js/597.80764a2f.chunk.js": "/bb-last/static/js/597.80764a2f.chunk.js",
+    "static/js/81.10de4340.chunk.js": "/bb-last/static/js/81.10de4340.chunk.js",
     "static/media/mcr1.jpg": "/bb-last/static/media/mcr1.a7c352b8e0879aa89912.jpg",
     "static/media/mcr2.jpg": "/bb-last/static/media/mcr2.97238a6b5c5fe1f4a4e2.jpg",
     "static/media/mcr3.jpg": "/bb-last/static/media/mcr3.ce1e84c42d2674a4ebe0.jpg",
@@ -30,15 +30,15 @@
     "static/media/user.svg": "/bb-last/static/media/user.6c3be22464a0023cca5d.svg",
     "index.html": "/bb-last/index.html",
     "static/media/close.svg": "/bb-last/static/media/close.cbc1cf0ff039e384605bfb6c45c7639e.svg",
-    "main.0bdc1e25.css.map": "/bb-last/static/css/main.0bdc1e25.css.map",
-    "main.e16f706f.js.map": "/bb-last/static/js/main.e16f706f.js.map",
-    "987.b6c7e158.chunk.js.map": "/bb-last/static/js/987.b6c7e158.chunk.js.map",
-    "876.49bf8e2a.chunk.js.map": "/bb-last/static/js/876.49bf8e2a.chunk.js.map",
-    "558.e09b00b8.chunk.js.map": "/bb-last/static/js/558.e09b00b8.chunk.js.map",
-    "81.2f23a2ee.chunk.js.map": "/bb-last/static/js/81.2f23a2ee.chunk.js.map"
+    "main.40924ee5.css.map": "/bb-last/static/css/main.40924ee5.css.map",
+    "main.a5fa5076.js.map": "/bb-last/static/js/main.a5fa5076.js.map",
+    "987.5e7b5151.chunk.js.map": "/bb-last/static/js/987.5e7b5151.chunk.js.map",
+    "101.35e4d354.chunk.js.map": "/bb-last/static/js/101.35e4d354.chunk.js.map",
+    "597.80764a2f.chunk.js.map": "/bb-last/static/js/597.80764a2f.chunk.js.map",
+    "81.10de4340.chunk.js.map": "/bb-last/static/js/81.10de4340.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0bdc1e25.css",
-    "static/js/main.e16f706f.js"
+    "static/css/main.40924ee5.css",
+    "static/js/main.a5fa5076.js"
   ]
 }

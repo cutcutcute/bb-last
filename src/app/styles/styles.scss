@@ -15,6 +15,7 @@
 @import "not-found";
 @import "about";
 @import "contacts";
+@import "sendForm";
 
 
 @font-face {
@@ -32,14 +33,24 @@
     word-wrap: break-word;
 
 
-    
-  
-    
-
 }
 
+option{
 
+    &:hover{
+        background: linear-gradient(180deg, rgba(203,196,186,.5) 50%, rgba(203,196,186,.45) 70%);
+    }
+}
 
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
 
 
 h5{

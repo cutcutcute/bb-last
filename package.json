@@ -11,6 +11,7 @@
     "@types/node": "^16.18.83",
     "@types/react": "^18.2.59",
     "@types/react-dom": "^18.2.19",
+    "axios": "^1.6.8",
     "bootstrap": "^5.3.3",
     "framer-motion": "^11.0.6",
     "gsap": "^3.12.5",

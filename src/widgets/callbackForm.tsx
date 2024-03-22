@@ -1,7 +1,8 @@
 import React from "react";
 import { AnimateTitleText } from "../features/textAnimation";
 import { motion } from "framer-motion";
-import { useParallax } from "react-scroll-parallax";
+import { CallbackBody } from "./CallbackBody";
+
 
 export const CallbackForm = (): React.JSX.Element => {
 
@@ -15,40 +16,7 @@ export const CallbackForm = (): React.JSX.Element => {
             </div>
         </div>
 
-        <div className="container">
-            <div className="row">
-                <div className="col m-3">
-                <select className="form-select form-elem" aria-label="Пример выбора по умолчанию">
-                    <option value="1" selected>Новостройка</option>
-                    <option value="2">Вторичное Жилье</option>
-                    <option value="3">Загородное Жилье</option>
-                    <option value="4">Коммерческое Помещение</option>
-                </select>
-                </div>
-                <div className="col m-3" id="city-form">
-                <input type="text" className="form-control form-elem" id="exampleFormControlInput1" placeholder="Город"/>
-                </div>
-            </div>
-
-            <div className="row">
-                <div className="col m-3" id="square-form">
-                    <input type="text" className="form-control form-elem" id="exampleFormControlInput1" placeholder="Площадь"/>
-                </div>
-                <div className="col m-3" id="phone-form">
-                    <input type="text" className="form-control form-elem" id="exampleFormControlInput1" placeholder="Телефон"/>
-                </div>
-
-                <div className="col m-3" id="user-form">
-                    <input type="text" className="form-control form-elem" id="exampleFormControlInput1" placeholder="Ваше имя"/>
-                </div>
-            </div>
-
-            <div className="row">
-                    <div className="col mt-3 w-100 d-flex justify-content-center">
-                <button className="form-send">Отправить заявку</button>
-            </div>
-            </div>
-        </div>
+        <CallbackBody/>
     </section>
 
 }
