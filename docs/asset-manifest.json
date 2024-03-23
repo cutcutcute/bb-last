@@ -1,10 +1,14 @@
 {
   "files": {
-    "main.css": "/bb-last/static/css/main.40924ee5.css",
-    "main.js": "/bb-last/static/js/main.a5fa5076.js",
+    "main.css": "/bb-last/static/css/main.ae5d835e.css",
+    "main.js": "/bb-last/static/js/main.07e32397.js",
     "static/js/987.5e7b5151.chunk.js": "/bb-last/static/js/987.5e7b5151.chunk.js",
+    "static/js/538.62412e22.chunk.js": "/bb-last/static/js/538.62412e22.chunk.js",
+    "static/js/300.436d6e98.chunk.js": "/bb-last/static/js/300.436d6e98.chunk.js",
+    "static/js/166.d597f5db.chunk.js": "/bb-last/static/js/166.d597f5db.chunk.js",
     "static/js/101.35e4d354.chunk.js": "/bb-last/static/js/101.35e4d354.chunk.js",
     "static/js/597.80764a2f.chunk.js": "/bb-last/static/js/597.80764a2f.chunk.js",
+    "static/js/281.8b5b21f7.chunk.js": "/bb-last/static/js/281.8b5b21f7.chunk.js",
     "static/js/81.10de4340.chunk.js": "/bb-last/static/js/81.10de4340.chunk.js",
     "static/media/mcr1.jpg": "/bb-last/static/media/mcr1.a7c352b8e0879aa89912.jpg",
     "static/media/mcr2.jpg": "/bb-last/static/media/mcr2.97238a6b5c5fe1f4a4e2.jpg",
@@ -18,8 +22,8 @@
     "static/media/cr4.jpg": "/bb-last/static/media/cr4.29313ce2cec062eda465.jpg",
     "static/media/centurygothic.ttf": "/bb-last/static/media/centurygothic.b194aa2bd524e2c973f7.ttf",
     "static/media/info.jpeg": "/bb-last/static/media/info.2311e7e97b77be0fa94b.jpeg",
-    "static/media/logo.svg": "/bb-last/static/media/logo.16bf8b44d650374c8f79.svg",
-    "static/media/logo-dark.svg": "/bb-last/static/media/logo-dark.fdba0524aaa195e10d56.svg",
+    "static/media/logo.svg": "/bb-last/static/media/logo.61d45789fcd72b65b397.svg",
+    "static/media/logo-dark.svg": "/bb-last/static/media/logo-dark.8e0fb1436b9282acbbc2.svg",
     "static/media/smallLogo.svg": "/bb-last/static/media/smallLogo.127d2ec69219ba7e3677a1f8b015832d.svg",
     "static/media/square.svg": "/bb-last/static/media/square.0ebe7c7385c7726a1a74.svg",
     "static/media/instagram.svg": "/bb-last/static/media/instagram.07a3eab8cb96d363fc4db37b52ef01e5.svg",
@@ -30,15 +34,19 @@
     "static/media/user.svg": "/bb-last/static/media/user.6c3be22464a0023cca5d.svg",
     "index.html": "/bb-last/index.html",
     "static/media/close.svg": "/bb-last/static/media/close.cbc1cf0ff039e384605bfb6c45c7639e.svg",
-    "main.40924ee5.css.map": "/bb-last/static/css/main.40924ee5.css.map",
-    "main.a5fa5076.js.map": "/bb-last/static/js/main.a5fa5076.js.map",
+    "main.ae5d835e.css.map": "/bb-last/static/css/main.ae5d835e.css.map",
+    "main.07e32397.js.map": "/bb-last/static/js/main.07e32397.js.map",
     "987.5e7b5151.chunk.js.map": "/bb-last/static/js/987.5e7b5151.chunk.js.map",
+    "538.62412e22.chunk.js.map": "/bb-last/static/js/538.62412e22.chunk.js.map",
+    "300.436d6e98.chunk.js.map": "/bb-last/static/js/300.436d6e98.chunk.js.map",
+    "166.d597f5db.chunk.js.map": "/bb-last/static/js/166.d597f5db.chunk.js.map",
     "101.35e4d354.chunk.js.map": "/bb-last/static/js/101.35e4d354.chunk.js.map",
     "597.80764a2f.chunk.js.map": "/bb-last/static/js/597.80764a2f.chunk.js.map",
+    "281.8b5b21f7.chunk.js.map": "/bb-last/static/js/281.8b5b21f7.chunk.js.map",
     "81.10de4340.chunk.js.map": "/bb-last/static/js/81.10de4340.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.40924ee5.css",
-    "static/js/main.a5fa5076.js"
+    "static/css/main.ae5d835e.css",
+    "static/js/main.07e32397.js"
   ]
 }
