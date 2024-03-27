@@ -29,7 +29,7 @@ export const SendForm = (props: FormDataInterface):React.JSX.Element => {
         else{
 
 
-            axios.post("http://localhost:8080/api/form", props, {headers:{"Content-Type": "application/json"}})
+            axios.post("http://194.190.152.238:8080/api/form", props, {headers:{"Content-Type": "application/json"}})
             .then((response) => {
 
                 setModalMessage("Ваша заявка успешно отправлена!")
@@ -44,7 +44,7 @@ export const SendForm = (props: FormDataInterface):React.JSX.Element => {
     useEffect(()=>{
         sendForm()
         
-    })
+    }, [])
 
     return <motion.section initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0}} onClick={props.closeModal} className="feature-form d-flex justify-content-center align-items-center">
             <div className="feature-form__window container">

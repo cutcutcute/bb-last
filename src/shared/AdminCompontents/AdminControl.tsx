@@ -1,10 +1,13 @@
-import React, { useEffect, useLayoutEffect, useState } from "react";
+import React, { SetStateAction, Suspense, useEffect, useLayoutEffect, useState } from "react";
 import { useNavigate } from "react-router";
+import Network from "../../features/Network";
+import { MainLoading } from "../../widgets/loading/mainLoading";
+
 
 interface ControlProps{
     title: string,
     addHandleNavigatePath: string,
-    getData?:()=>any[]
+    getData?:()=>Promise<any[]>
 }
 
 const AdminControl = (props: ControlProps): React.JSX.Element => {
@@ -13,8 +16,14 @@ const AdminControl = (props: ControlProps): React.JSX.Element => {
     const navigate = useNavigate();
 
     useEffect(()=>{
-        setData(props.getData?props.getData():[])
-    })
+        const fetchData = async () => {
+            const loadedData = props.getData ? await props.getData() : [];
+            setData(loadedData);
+            console.log(loadedData);
+        };
+
+        fetchData();
+    }, [])
 
     return <section className="container">
         <div className="row mb-3">
@@ -28,11 +37,28 @@ const AdminControl = (props: ControlProps): React.JSX.Element => {
         </div>
 
         <div className="row mb-3">
+            <Suspense fallback={<MainLoading/>}>
             <div className="admin-control__content-layout col text-center">
-                {data.length>0?(<div>Data</div>):(
-                    <div>Записи отсутствуют</div>
-                )}
+                    {data.length > 0 ? (
+                        <div>{data.map(item=>
+                            (<div  key={item.id} className="row portfolio-element justify-content-start align-items-center">
+                                <div className="col text-start">{item.title}</div>
+                                <div className="col text-start">{item.category}</div>
+                                <div className="col text-end">
+                                    <button onClick={()=>{Network.deleteProject(item.id)}} className="portfolio-element__button">Удалить</button>
+                                </div>
+                                <div className="col text-end">
+                                    <button  onClick={()=>{navigate(`/admin/panel/portfolio/${item.id}`)}} className="portfolio-element__button">Подробнее</button>
+                                </div>
+                            </div>))}</div>
+                    ) : (
+                        <div>Записи отсутствуют</div>
+                    )}
+                    <div className="row mt-3 justif-content-center">
+                        <div onClick={()=>{window.location.reload()}} className="col portfolio-element__refresh">Обновить Страницу</div>
+                    </div>
             </div>  
+            </Suspense>
         </div>
     </section>
 }

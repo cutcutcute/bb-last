@@ -1,6 +1,8 @@
 
 
 
+$grey-background: linear-gradient(180deg, rgba(203,196,186,.5) 50%, rgba(203,196,186,.45) 70%);
+
 
 %logo-after{
     position: absolute;
@@ -28,7 +30,7 @@
     align-items: center;
     margin-top: 15px;
     min-width: 332px;
-    background: linear-gradient(180deg, rgba(203,196,186,.5) 50%, rgba(203,196,186,.45) 70%);
+    background: $grey-background;
     gap:15px;
 
     &__title{

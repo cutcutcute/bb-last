@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {ChangeEvent, useState} from "react";
 import { AdminInputLayout } from "./AdminInputLayout";
 
 interface IAddUser{
@@ -7,6 +7,11 @@ interface IAddUser{
 
 
 const AdminAddUser = (props: IAddUser): React.JSX.Element => {
+
+    const [login, setLogin] = useState<string>("")
+    const [password, setPassword] = useState<string>("")
+    const [passwordRepeat, setPasswordRepeat] = useState<string>("")
+    const [name, setName] = useState<string>("")
 
     const [isDisabled, setIsDisabled] = useState<boolean>(true)
 
@@ -19,24 +24,24 @@ const AdminAddUser = (props: IAddUser): React.JSX.Element => {
             <div className="admin-control__add-user-menu col">
                 <div className="row m-3">
                     <div className="col">
-                        <AdminInputLayout placeholder="Логин" inputType="text"/>
+                        <AdminInputLayout value={login} onChange={(e: ChangeEvent<HTMLInputElement>)=>{setLogin(e.target.value)}} placeholder="Логин" inputType="text"/>
                     </div>
                 </div>
                 <div className="row m-3">
                     <div className="col">
-                        <AdminInputLayout placeholder="Пароль" inputType="password"/>
-                    </div>
-                </div>
-
-                <div className="row m-3">
-                    <div className="col">
-                        <AdminInputLayout placeholder="Повторить Пароль" inputType="password"/>
+                        <AdminInputLayout value={password} onChange={(e: ChangeEvent<HTMLInputElement>)=>{setPassword(e.target.value)}} placeholder="Пароль" inputType="password"/>
                     </div>
                 </div>
 
                 <div className="row m-3">
                     <div className="col">
-                        <AdminInputLayout placeholder="Имя" inputType="text"/>
+                        <AdminInputLayout value={passwordRepeat} onChange={(e: ChangeEvent<HTMLInputElement>)=>{setPasswordRepeat(e.target.value)}} placeholder="Повторить Пароль" inputType="password"/>
+                    </div>
+                </div>
+
+                <div className="row m-3">
+                    <div className="col">
+                        <AdminInputLayout value={name} onChange={(e: ChangeEvent<HTMLInputElement>)=>{setName(e.target.value)}} placeholder="Имя" inputType="text"/>
                     </div>
                 </div>
 

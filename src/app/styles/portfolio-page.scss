@@ -1,0 +1,122 @@
+
+
+.portfolio-list{
+
+    &__wrapper{
+        position: absolute;
+        inset: 0;
+        background:$grey-background ;
+        min-width: 332px;
+    }
+
+    &__area{
+        position: relative;
+        margin-top:$page-header-desktop-height + 20px;
+        padding: 5px;
+        width:95% !important;
+        max-width: none !important;
+        
+        &-row{
+            padding-right: 0 !important;
+        }
+
+        &-item{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+            background-color: rgba(255,255,255,1);
+            padding-right: 0 !important;
+            padding-left: 50px !important;
+            border-radius: 0 15px 15px 0;
+            transition: all .3s ease-out;
+            cursor: pointer;
+
+            &:hover{
+                box-shadow: 0 0 3px #000;
+            }
+        
+            &-description-block{
+                flex:1;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+
+                &-title{
+                    @include font-size(1.4rem);
+                }
+            }
+
+            &-image-block{
+                flex:1;
+                height: auto;
+            }
+
+            &-image{
+                border-radius: 0 15px 15px 0;
+                
+                
+                
+            
+            }
+
+
+
+        }
+    }
+}
+
+@include media-breakpoint-between(xs, md){
+
+    .portfolio-list{
+
+        &__wrapper{
+       
+        }
+    
+        &__area{
+            margin-top: $page-header-mobile-height;
+            
+            &-row{
+     
+            }
+    
+            &-item{
+                padding-left: 20px !important;
+            
+                &-description-block{
+                  
+    
+                    &-title>h2{
+                        font-size: 1.1rem !important;
+                    }
+
+                    &-location{
+                        @include font-size(.5rem)
+                    }
+
+                    &-date{
+                        @include font-size(.5rem)
+                    }
+
+                }
+    
+                &-image-block{
+                 
+                }
+    
+                &-image{
+             
+                    
+                    
+                    
+                
+                }
+    
+    
+    
+            }
+        }
+    }
+}

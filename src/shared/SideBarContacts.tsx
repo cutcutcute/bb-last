@@ -1,9 +1,5 @@
 import { motion } from "framer-motion";
 import React from "react";
-import YandexImage from "../app/images/contacts/mail.svg";
-import TelegramImage from "../app/images/contacts/telegram.svg";
-import InstagramImage from "../app/images/contacts/instagram.svg";
-import { ImageWrapper } from "./ImageWrapper";
 import { ContactIcons } from "./ContactIcons";
 
 interface SidebarProps{

@@ -1,0 +1,45 @@
+.presentation-area{
+    position: fixed;
+    inset: 0;
+    background-color: rgba(255,255,255,1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    z-index:1500;
+
+    &__window{
+        position: relative;
+        width: 300px;
+        height: auto;
+        animation: logo-animation 5s ease-in-out infinite;
+    }
+}
+
+.no-animation{
+    animation: none;
+}
+
+@keyframes logo-animation{
+    0%{
+        margin-bottom: 0;
+    }
+    
+ 
+
+    100%{
+        margin-bottom: 310px;
+    }
+}
+
+@include media-breakpoint-between(xs,md){
+    .presentation-area{
+       
+    
+        &__window{
+  
+            width: 150px;
+  
+        }
+    }
+}

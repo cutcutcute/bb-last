@@ -1,0 +1,29 @@
+
+
+
+.portfolio-presentation{
+    position: relative;
+    margin-top: $page-header-desktop-height;
+
+    &__year{
+        @include font-size(1.2rem);
+    }
+
+    &__location{
+        @include font-size(1.2rem);
+    }
+
+    &__plan{
+        position: relative;
+        width:100vw;
+        height: auto;
+
+    }
+
+    &__image{
+        overflow: hidden;
+        &-item{
+            overflow: hidden;
+        }
+    }
+}

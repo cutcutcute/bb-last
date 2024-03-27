@@ -1,17 +1,21 @@
 import React, {useCallback, useState} from 'react'
 import {useDropzone} from 'react-dropzone'
 
-export const FileUploader = (): any => {
 
-    const [files, setFiles] = useState<File[]>([]);
+interface IFileUploader{
+    files: File[],
+    addFiles: (f:File[])=>void
+}
+export const FileUploader = (props: IFileUploader): any => {
+
 
     const onDrop = useCallback((acceptedFiles: File[]) => {
-        console.log(acceptedFiles);
-        setFiles(prevFiles => [...prevFiles, ...acceptedFiles]);
+
+        props.addFiles([...acceptedFiles]);
       }, [])
       const {getRootProps, getInputProps, isDragActive} = useDropzone({onDrop})
     
-      const loadingFiles = files.map((file, index): React.JSX.Element => <li key={index}>{file.name}</li>)
+      const loadingFiles = props.files.map((file, index): React.JSX.Element => <li key={index}>{file.name}</li>)
       return (<>
                 <div className='drop-files__area mb-3'{...getRootProps()}>
                 <input {...getInputProps()} />
@@ -23,9 +27,9 @@ export const FileUploader = (): any => {
                 </div>
 
                 
-                {files.length > 0 && (
+                {props.files.length > 0 && (
                     <>
-                        <button onClick={()=>{setFiles([])}} className='mb-3'>Удалить файлы</button>
+                        <button onClick={()=>{props.addFiles([])}} className='mb-3'>Удалить файлы</button>
                         <div>Загруженные файлы</div>
                         <ul>
                             {loadingFiles}
